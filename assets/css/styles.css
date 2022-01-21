@@ -93,7 +93,9 @@ a {
 }
 
 a:hover {
-    color: rgb(0, 0, 0);
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 0.3em;
 }
 
 .hero-image {
