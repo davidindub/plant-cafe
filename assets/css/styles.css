@@ -64,12 +64,12 @@ h1,
 h2,
 h3 {
     font-family: 'Rasa', serif;
-    text-transform: uppercase;
 }
 
 #logo {
     font-weight: 500;
     font-size: 3rem;
+    text-transform: uppercase;
 }
 
 nav {
@@ -111,8 +111,33 @@ a:hover {
 }
 
 .hero-inner {
-    /* position: relative; */
-    /* text-align: right; */
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.hero-inner h2 {
+    font-size: 1.8rem;
+}
+
+button {
+    background-color:rgba(15, 74, 59, 1);
+    color:rgba(237, 238, 243, 1);
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+  background-color: rgba(159, 152, 73, 1);
+  color: #000;
+}
+
+#hero-button {
+    margin-top: 2rem;
 }
 
 .home-cards {
