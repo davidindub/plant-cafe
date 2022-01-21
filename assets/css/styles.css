@@ -4,6 +4,7 @@
 /* Resets some of the user stylesheet default rules */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -90,8 +91,8 @@ a:hover {
 .hero-image {
     position: relative;
     width: 100vw;
-    height: 50vh;
-    background-image: url("../images/hero-img-sm.jpg");
+    height: 100vh;
+    background-image: url("../images/hero-img.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
