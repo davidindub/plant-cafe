@@ -104,6 +104,7 @@ a:hover {
 
 .home-cards {
     background-color: rgba(15, 74, 59, 1);
+    padding: 1rem;
 }
 
 .card {
@@ -112,4 +113,16 @@ a:hover {
     margin: 2rem auto;
     padding: 1rem;
     text-align: center;
+}
+
+.card img {
+    margin: 0 auto;
+}
+
+.card h2 {
+    padding-top: 1rem;
+}
+
+.card p {
+    padding-bottom: 1rem;
 }
