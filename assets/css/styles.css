@@ -49,18 +49,21 @@ html {
 
   header {
       background-color: rgba(15, 74, 59, 1);
-      color: rgb(237, 238, 243)
+      color: rgb(237, 238, 243);
+      text-align: center;
   }
 
   main {
       background-color: rgb(237, 238, 243);
   }
 
-  h1 {
+  h1, h2, h3 {
     font-family: 'Rasa', serif;
+    text-transform: uppercase;
+  }
+  h1 {
     font-weight: 500;
     font-size: 3rem;
-    text-transform: uppercase;
   }
 
   nav ul, footer ul {
