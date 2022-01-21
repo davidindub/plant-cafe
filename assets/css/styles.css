@@ -47,6 +47,11 @@ html {
 
   }
 
+  header {
+      background-color: rgba(15, 74, 59, 1);
+      color: rgb(237, 238, 243)
+  }
+
   main {
       background-color: rgb(237, 238, 243);
   }
@@ -54,7 +59,39 @@ html {
   h1 {
     font-family: 'Rasa', serif;
     font-weight: 500;
+    font-size: 3rem;
     text-transform: uppercase;
+  }
+
+  nav ul, footer ul {
+      list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: rgb(0, 0, 0);
+  }
+
+  .hero-image {
+      position: relative;
+      width: 100vw;
+      height: 50vh;
+      background-image: url("../images/hero-img-sm.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .hero-inner {
+      /* position: relative; */
+      /* text-align: right; */
   }
 
   .home-cards {
