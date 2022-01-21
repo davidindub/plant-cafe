@@ -3,107 +3,113 @@
 
 /* Resets some of the user stylesheet default rules */
 html {
-    box-sizing: border-box;  
-  }
-  
-  *,
-  *:before,
-  *:after {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
-  body,
-  header,
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  figure,
-  blockquote,
-  dl,
-  dd {
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
     margin: 0;
-  }
-  
-  img,
-  picture {
+}
+
+img,
+picture {
     max-width: 100%;
     display: block;
-  }
-  
-  input,
-  button,
-  textarea,
-  select {
+}
+
+input,
+button,
+textarea,
+select {
     font: inherit;
-  }
+}
 
-  /* My Styles */
+/* My Styles */
 
-  body {
-      background-color: rgb(117, 153, 148);
-      font-family: 'Biryani', sans-serif;
+body {
+    background-color: rgb(117, 153, 148);
+    font-family: 'Biryani', sans-serif;
 
-  }
+}
 
-  header {
-      background-color: rgba(15, 74, 59, 1);
-      color: rgb(237, 238, 243);
-      text-align: center;
-  }
+header {
+    background-color: rgba(15, 74, 59, 1);
+    color: rgb(237, 238, 243);
+    text-align: center;
+}
 
-  main {
-      background-color: rgb(237, 238, 243);
-  }
+main {
+    background-color: rgb(237, 238, 243);
+}
 
-  h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Rasa', serif;
     text-transform: uppercase;
-  }
-  h1 {
+}
+
+h1 {
     font-weight: 500;
     font-size: 3rem;
-  }
+}
 
-  nav ul, footer ul {
-      list-style: none;
-  }
+nav ul,
+footer ul {
+    list-style: none;
+}
 
-  nav li {
+nav li {
     display: inline-block;
-  }
+}
 
-  a {
-      text-decoration: none;
-  }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-  a:hover {
-      color: rgb(0, 0, 0);
-  }
+a:hover {
+    color: rgb(0, 0, 0);
+}
 
-  .hero-image {
-      position: relative;
-      width: 100vw;
-      height: 50vh;
-      background-image: url("../images/hero-img-sm.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-  }
+.hero-image {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../images/hero-img-sm.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-  .hero-inner {
-      /* position: relative; */
-      /* text-align: right; */
-  }
+.hero-inner {
+    /* position: relative; */
+    /* text-align: right; */
+}
 
-  .home-cards {
-      background-color: rgba(15, 74, 59, 1);
-  }
+.home-cards {
+    background-color: rgba(15, 74, 59, 1);
+}
 
-  .card {
-      background-color: rgba(237, 238, 243, 1);
-      max-width: 90%;
-      margin: 0 auto;
-      text-align: center;
-  }
+.card {
+    background-color: rgba(237, 238, 243, 1);
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
