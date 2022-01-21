@@ -165,12 +165,16 @@ button:hover {
     padding-bottom: 1rem;
 }
 
-.footer-socials li {
+footer {
+    background-color: rgba(237, 238, 243, 1);
+    text-align: center;
+}
+
+footer li {
     display: inline;
+    padding: 0 1rem;
   }
   
   .footer-socials li i {
-    display: inline;
-    padding: 10px;
     color: inherit;
   }
