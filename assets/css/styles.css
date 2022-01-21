@@ -1,3 +1,6 @@
+/* Imports google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Biryani&family=Rasa:wght@500&display=swap');
+
 /* Resets some of the user stylesheet default rules */
 html {
     box-sizing: border-box;  
@@ -40,6 +43,8 @@ html {
 
   body {
       background-color: rgb(117, 153, 148);
+      font-family: 'Biryani', sans-serif;
+
   }
 
   main {
@@ -47,7 +52,9 @@ html {
   }
 
   h1 {
-      color: rgb(15, 74, 59);
+    font-family: 'Rasa', serif;
+    font-weight: 500;
+    text-transform: uppercase;
   }
 
   .home-cards {
@@ -58,4 +65,5 @@ html {
       background-color: rgba(237, 238, 243, 1);
       max-width: 90%;
       margin: 0 auto;
+      text-align: center;
   }
