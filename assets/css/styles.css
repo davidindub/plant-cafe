@@ -164,3 +164,13 @@ button:hover {
 .card p {
     padding-bottom: 1rem;
 }
+
+.footer-socials li {
+    display: inline;
+  }
+  
+  .footer-socials li i {
+    display: inline;
+    padding: 10px;
+    color: inherit;
+  }
