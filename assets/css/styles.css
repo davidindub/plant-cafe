@@ -45,8 +45,10 @@ select {
 /* My Styles */
 
 .container {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
+    /* fixes content spilling to right in Chrome */
+    overflow-x: hidden;
 }
 
 body {
@@ -91,15 +93,19 @@ nav li {
     padding: 0 1rem;
 }
 
+nav a:hover {
+    color:rgb(237, 238, 243);
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 a:hover {
-    color: inherit;
     text-decoration: underline;
     text-decoration-thickness: 0.3em;
+    color:rgba(15, 74, 59, 1);
 }
 
 .hero-image {
@@ -162,14 +168,6 @@ button:hover {
     text-align: center;
 }
 
-/* .card:first-of-type {
-    margin-top: 2rem;
-}
-
-.card:last-of-type {
-    margin-bottom: 2rem;
-} */
-
 .card img {
     margin: 0 auto;
 }
@@ -186,6 +184,13 @@ button:hover {
 footer {
     background-color: rgba(237, 238, 243, 1);
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-size: 0.8rem;
+    gap: 2rem;
+    padding: 2rem 0;
+    align-items: center;
 }
 
 footer li {
@@ -197,8 +202,32 @@ footer li {
     color: inherit;
   }
 
+  .footer-socials li i:hover {
+    color:rgba(15, 74, 59, 1);
+  }
+
 @media screen and (min-width: 768px) {
     .home-cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
-}    
+    .hero-inner h2 {
+        font-size: 2.5rem;
+    }
+    footer {
+        font-size: 1rem;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .hero-inner h2 {
+        font-size: 3.5rem;
+    }
+    #logo {
+        font-size: 5rem;
+    }
+} 
+
+
