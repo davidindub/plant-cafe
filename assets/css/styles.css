@@ -44,10 +44,14 @@ select {
 
 /* My Styles */
 
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 body {
     background-color: rgb(117, 153, 148);
     font-family: 'Biryani', sans-serif;
-
 }
 
 header {
@@ -104,6 +108,7 @@ a:hover {
     height: 100vh;
     max-height: 700px;
     min-height: 640px;
+    max-width: 1920px;
     background-image: url("../images/hero-img.jpg");
     background-position: center;
     background-size: cover;
@@ -146,6 +151,8 @@ button:hover {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .card {
@@ -154,6 +161,14 @@ button:hover {
     margin: 1rem;
     text-align: center;
 }
+
+/* .card:first-of-type {
+    margin-top: 2rem;
+}
+
+.card:last-of-type {
+    margin-bottom: 2rem;
+} */
 
 .card img {
     margin: 0 auto;
