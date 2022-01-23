@@ -60,6 +60,7 @@ header {
     background-color: rgba(15, 74, 59, 1);
     color: rgb(237, 238, 243);
     text-align: center;
+    padding-top: 0.8rem;
 }
 
 main {
@@ -215,6 +216,9 @@ footer li {
     }
     footer {
         font-size: 1rem;
+    }
+    #hero-button {
+        display: none;
     }
 } 
 
