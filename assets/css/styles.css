@@ -1,6 +1,14 @@
 /* Imports google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Biryani&family=Rasa:wght@500&display=swap');
 
+/* Variables for Colors */
+:root {
+    --main-bg-color: rgb(117, 153, 148);
+    --color-primary: rgba(15, 74, 59, 1);
+    --color-secondary: rgba(160, 143, 101, 1);
+    --color-off-white: rgb(237, 237, 237);
+}
+
 /* Resets some of the user stylesheet default rules */
 html {
     box-sizing: border-box;
@@ -47,24 +55,25 @@ select {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+
     /* fixes content spilling to right in Chrome */
     overflow-x: hidden;
 }
 
 body {
-    background-color: rgb(117, 153, 148);
+    background-color: var(--main-bg-color);
     font-family: 'Biryani', sans-serif;
 }
 
 header {
-    background-color: rgba(15, 74, 59, 1);
-    color: rgb(237, 238, 243);
+    background-color: var(--color-primary);
+    color: var(--color-off-white);
     text-align: center;
     padding-top: 0.8rem;
 }
 
 main {
-    background-color: rgb(237, 238, 243);
+    background-color: var(--color-off-white);
 }
 
 h1,
@@ -101,17 +110,17 @@ nav {
     padding-bottom: .5rem;
 }
 
-nav a:hover,
+/* nav a:hover,
 nav a:focus,
 nav a[class="active"] {
-    /* color: rgb(237, 238, 243); */
-}
+    color: rgb(237, 238, 243);
+} */
 
 .card a:hover, 
 .card a:focus, 
 .footer a:hover,
 .footer a:focus {
-    color: rgba(15, 74, 59, 1);
+    color: var(--color-primary);;
 }
 
 
@@ -149,8 +158,8 @@ nav li {
 }
 
 button {
-    background-color: rgba(15, 74, 59, 1);
-    color: rgba(237, 238, 243, 1);
+    background-color: var(--color-primary);;
+    color: var(--color-off-white);
     border: none;
     padding: 1rem 2rem;
     text-align: center;
@@ -165,7 +174,7 @@ button {
 
 button:hover,
 button:focus {
-    background-color: rgba(159, 152, 73, 1);
+    background-color: var(--color-secondary);
     color: #000;
 }
 
@@ -174,7 +183,7 @@ button:focus {
 }
 
 .home-cards {
-    background-color: rgba(15, 74, 59, 1);
+    background-color: var(--color-primary);;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -184,7 +193,7 @@ button:focus {
 }
 
 .card {
-    background-color: rgba(237, 238, 243, 1);
+    background-color: var(--color-off-white);
     padding: 1rem;
     margin: 1rem;
     text-align: center;
@@ -204,7 +213,7 @@ button:focus {
 }
 
 footer {
-    background-color: rgba(237, 238, 243, 1);
+    background-color: var(--color-off-white);
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -232,7 +241,7 @@ footer li {
 
 .footer-socials i:hover,
 .footer-socials i:focus {
-    color: rgba(15, 74, 59, 1);
+    color: var(--color-primary);;
 }
 
 @media screen and (min-width: 768px) {
