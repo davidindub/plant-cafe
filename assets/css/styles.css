@@ -194,6 +194,12 @@ footer {
     align-items: center;
 }
 
+#footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 footer li {
     display: inline;
     padding: 0 1rem;
@@ -231,6 +237,9 @@ footer li {
     }
     #logo {
         font-size: 5rem;
+    }
+    #footer-nav {
+        flex-direction: column;
     }
 } 
 

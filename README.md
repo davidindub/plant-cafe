@@ -9,7 +9,13 @@ The plants are not sold online, but the website will include some tips on keepin
 The main target of the website are people looking for quick information such as the food & drinks menu, or the location and opening house of the shop and it is expected most of these visitors will be checking the website quickly on a mobile device. Delivering this information quickly and clearly is the main aim of the project.
 
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+## Use Stories
+
+- As a tourist, I want to find out when the café is open and where it is so I can visit.
+
+- As a plant enthusiast, I want to find out about upcoming events.
+
+- As a vegan, I want to find out if there is many options for me to eat at the cafe.
 
 ## Features 
 
@@ -112,6 +118,9 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
 You can break the credits section up into Content and Media, depending on what you have included in your project. 
+
+- [Stack Overflow - Can't figure out what is causing the side scroll on my website](https://stackoverflow.com/questions/35193617/cant-figure-out-what-is-causing-the-side-scroll-on-my-website)
+I encountered problem where my page would have a horizontal scroll to the right in Chrome yet no content seemed to be causing it, and the problem was to do with the browser scroll bar, adding overflow-x: hidden to the body element fixed this issue.
 
 ### Content 
 
