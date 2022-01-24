@@ -1,15 +1,15 @@
 /* Imports google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Biryani&family=Rasa:wght@500&display=swap');
 
-/* Variables for Colors */
+/* Variables for Colors and Fonts */
 :root {
     --main-bg-color: rgb(117, 153, 148);
     --color-primary: rgba(15, 74, 59, 1);
     --color-secondary: rgba(160, 143, 101, 1);
     --color-off-white: rgb(237, 237, 237);
 
-    --font-headings: 'Rasa', serif;;
-    --font-secondary: 'Biryani', sans-serif;;
+    --font-headings: 'Rasa', serif;
+    --font-secondary: 'Biryani', sans-serif;
 }
 
 /* Resets some of the user stylesheet default rules */
@@ -19,8 +19,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -56,11 +56,8 @@ select {
 /* My Styles */
 
 .container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-
-    /* fixes content spilling to right in Chrome */
-    overflow-x: hidden;
 }
 
 body {
@@ -82,19 +79,24 @@ main {
 h1,
 h2,
 h3 {
-    font-family: var(--font-headings)
+    font-family: var(--font-headings);
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
 }
 
-a:hover,
-a:focus,
-nav a[class="active"] {
+a:hover:not(.card),
+a:focus:not(.card),
+nav a[class="active"],
+a.card:hover h2 {
     text-decoration: underline;
     text-decoration-thickness: 0.3em;
+    text-decoration-color: initial;
 }
 
 #logo {
@@ -103,7 +105,8 @@ nav a[class="active"] {
     text-transform: uppercase;
 }
 
-#logo a:hover, #logo a:focus {
+#logo a:hover,
+#logo a:focus {
     text-decoration: none;
 }
 
@@ -113,17 +116,11 @@ nav {
     padding-bottom: .5rem;
 }
 
-/* nav a:hover,
-nav a:focus,
-nav a[class="active"] {
-    color: rgb(237, 238, 243);
-} */
-
-.card a:hover, 
-.card a:focus, 
-.footer a:hover,
-.footer a:focus {
-    color: var(--color-primary);;
+a.card:hover h2,
+a.card:focus h2,
+footer a:hover,
+footer a:focus {
+    color: var(--color-primary);
 }
 
 
@@ -139,11 +136,10 @@ nav li {
 
 .hero-image {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     max-height: 700px;
     min-height: 640px;
-    max-width: 1920px;
     background-image: url("../images/hero-img.jpg");
     background-position: center;
     background-size: cover;
@@ -154,6 +150,7 @@ nav li {
     position: relative;
     left: 10%;
     top: 10%;
+    width: fit-content;
 }
 
 .hero-inner h2 {
@@ -161,7 +158,8 @@ nav li {
 }
 
 #hero-button {
-    background-color: var(--color-primary);;
+    background-color: var(--color-primary);
+    ;
     color: var(--color-off-white);
     border: none;
     padding: 1rem 2rem;
@@ -188,7 +186,8 @@ nav li {
 }
 
 .home-cards {
-    background-color: var(--color-primary);;
+    background-color: var(--color-primary);
+    ;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -246,10 +245,16 @@ footer li {
 
 .footer-socials i:hover,
 .footer-socials i:focus {
-    color: var(--color-primary);;
+    color: var(--color-primary);
+    ;
 }
 
 @media screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .home-cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
