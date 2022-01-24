@@ -79,10 +79,10 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+nav a[class="active"] {
     text-decoration: underline;
     text-decoration-thickness: 0.3em;
-    color: rgba(15, 74, 59, 1);
 }
 
 #logo {
@@ -91,15 +91,29 @@ a:focus {
     text-transform: uppercase;
 }
 
+#logo a:hover, #logo a:focus {
+    text-decoration: none;
+}
+
+
 nav {
     display: inline-block;
     padding-bottom: .5rem;
 }
 
 nav a:hover,
-nav a:focus {
-    color: rgb(237, 238, 243);
+nav a:focus,
+nav a[class="active"] {
+    /* color: rgb(237, 238, 243); */
 }
+
+.card a:hover, 
+.card a:focus, 
+.footer a:hover,
+.footer a:focus {
+    color: rgba(15, 74, 59, 1);
+}
+
 
 nav ul,
 footer ul {
@@ -228,6 +242,10 @@ footer li {
 
     .hero-inner h2 {
         font-size: 2.5rem;
+    }
+
+    .hero-inner h2 br {
+        display: none;
     }
 
     footer {
