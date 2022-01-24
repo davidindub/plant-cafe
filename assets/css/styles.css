@@ -7,6 +7,9 @@
     --color-primary: rgba(15, 74, 59, 1);
     --color-secondary: rgba(160, 143, 101, 1);
     --color-off-white: rgb(237, 237, 237);
+
+    --font-headings: 'Rasa', serif;;
+    --font-secondary: 'Biryani', sans-serif;;
 }
 
 /* Resets some of the user stylesheet default rules */
@@ -62,7 +65,7 @@ select {
 
 body {
     background-color: var(--main-bg-color);
-    font-family: 'Biryani', sans-serif;
+    font-family: var(--font-secondary)
 }
 
 header {
@@ -79,7 +82,7 @@ main {
 h1,
 h2,
 h3 {
-    font-family: 'Rasa', serif;
+    font-family: var(--font-headings)
 }
 
 a {
@@ -157,26 +160,28 @@ nav li {
     font-size: 1.8rem;
 }
 
-button {
+#hero-button {
     background-color: var(--color-primary);;
     color: var(--color-off-white);
     border: none;
     padding: 1rem 2rem;
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
     display: inline-block;
     font-size: 16px;
+}
+
+#hero-button:hover,
+#hero-button:focus {
+    background-color: var(--color-secondary);
+    color: #000;
 }
 
 :focus {
     outline: none;
 }
 
-button:hover,
-button:focus {
-    background-color: var(--color-secondary);
-    color: #000;
-}
+
 
 #hero-button {
     margin-top: 2rem;
