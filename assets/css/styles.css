@@ -73,6 +73,18 @@ h3 {
     font-family: 'Rasa', serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 0.3em;
+    color: rgba(15, 74, 59, 1);
+}
+
 #logo {
     font-weight: 500;
     font-size: 3rem;
@@ -84,6 +96,11 @@ nav {
     padding-bottom: .5rem;
 }
 
+nav a:hover,
+nav a:focus {
+    color: rgb(237, 238, 243);
+}
+
 nav ul,
 footer ul {
     list-style: none;
@@ -92,21 +109,6 @@ footer ul {
 nav li {
     display: inline;
     padding: 0 1rem;
-}
-
-nav a:hover {
-    color:rgb(237, 238, 243);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 0.3em;
-    color:rgba(15, 74, 59, 1);
 }
 
 .hero-image {
@@ -133,8 +135,8 @@ a:hover {
 }
 
 button {
-    background-color:rgba(15, 74, 59, 1);
-    color:rgba(237, 238, 243, 1);
+    background-color: rgba(15, 74, 59, 1);
+    color: rgba(237, 238, 243, 1);
     border: none;
     padding: 1rem 2rem;
     text-align: center;
@@ -143,9 +145,14 @@ button {
     font-size: 16px;
 }
 
-button:hover {
-  background-color: rgba(159, 152, 73, 1);
-  color: #000;
+:focus {
+    outline: none;
+}
+
+button:hover,
+button:focus {
+    background-color: rgba(159, 152, 73, 1);
+    color: #000;
 }
 
 #hero-button {
@@ -203,44 +210,49 @@ footer {
 footer li {
     display: inline;
     padding: 0 1rem;
-  }
-  
-  .footer-socials li i {
-    color: inherit;
-  }
+}
 
-  .footer-socials li i:hover {
-    color:rgba(15, 74, 59, 1);
-  }
+.footer-socials li i {
+    color: inherit;
+}
+
+.footer-socials i:hover,
+.footer-socials i:focus {
+    color: rgba(15, 74, 59, 1);
+}
 
 @media screen and (min-width: 768px) {
     .home-cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .hero-inner h2 {
         font-size: 2.5rem;
     }
+
     footer {
         font-size: 1rem;
     }
+
     #hero-button {
         display: none;
     }
-} 
+}
 
 @media screen and (min-width: 1200px) {
     footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .hero-inner h2 {
         font-size: 3.5rem;
     }
+
     #logo {
         font-size: 5rem;
     }
+
     #footer-nav {
         flex-direction: column;
     }
-} 
-
-
+}
