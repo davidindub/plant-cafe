@@ -25,6 +25,8 @@ In this section, you should go over the different parts of your project, and des
 
 - __Navigation Bar__
 
+  - All pages feature the same responsive navigation bar with links to the homepage, Food Menu, Location & Contact Form, and Events page. This allows the user to easily navigate the site.
+
   - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
@@ -32,44 +34,30 @@ In this section, you should go over the different parts of your project, and des
 
 - __The landing page image__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - The landing page features a large eye catching photograph with text overlayed, on smaller displays such as a phone it includes a button which when clicked scrolls the page down to the most important information the users might be looking for,
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
 
-- __Club Ethos Section__
+- __Cards on Landing Page__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
-
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
-
-- __Meetup Times section__
-
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
-
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+  - Three cards with related photographs describe the three pages of the website where the user might like to visit.
+  - Clicking anywhere on each of these cards takes the user to the associated page, making the links easy to tap on mobile. There is a subtle underline and color change on hover/focus.
 
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+  - The footer section includes the physical address and email address of the cafe, navigation links to the other pages of the website, and links to the cafe's social media accounts (all open in a new tab so as not to end the users visit to the Plant Cafe site)
+  - The footer is responsive, the three sections and the nav links stack on mobile view, but use the extra available space on larger screens.
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+- __Menu__
 
-- __Gallery__
+  - The Menu page provides the user with the list of Food and Drink options and prices available at the cafe.
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+- __Find Us__
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+  - This page provides the address of the cafe, an embedded Google Map of the location, and email and telephone details to contact the cafe.
 
-- __The Sign Up Page__
+- __Events__
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
+  - This page lists upcoming events happening at the cafe, and provides a form for a newsletter for users to find out about future events.
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 
