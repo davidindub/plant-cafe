@@ -16,6 +16,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-align: center;
 }
 
 *,
@@ -68,7 +69,6 @@ body {
 header {
     background-color: var(--color-primary);
     color: var(--color-off-white);
-    text-align: center;
     padding-top: 0.8rem;
 }
 
@@ -163,8 +163,6 @@ nav li {
     color: var(--color-off-white);
     border: none;
     padding: 1rem 2rem;
-    text-align: center;
-    /* text-decoration: none; */
     display: inline-block;
     font-size: 16px;
 }
@@ -179,10 +177,12 @@ nav li {
     outline: none;
 }
 
-
-
 #hero-button {
     margin-top: 2rem;
+}
+
+#findus {
+    display: grid;
 }
 
 .home-cards {
@@ -200,7 +200,6 @@ nav li {
     background-color: var(--color-off-white);
     padding: 1rem;
     margin: 1rem;
-    text-align: center;
 }
 
 .card img {
@@ -275,17 +274,23 @@ footer {
     grid-area: footer;
 }
 
-/* .footer-section:nth-of-type(1) {
-    grid-area: footer-one;
+.iframe-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
-.footer-section:nth-of-type(2) {
-    grid-area: footer-two;
-}
-
-.footer-section:nth-of-type(3) {
-    grid-area: footer-three;
-} */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 
 @media screen and (min-width: 768px) {
     .container {
@@ -325,6 +330,10 @@ footer {
 
     #logo {
         font-size: 5rem;
+    }
+
+    #findus {
+        grid-template-columns: 1fr 1fr;
     }
 
     #footer-nav {
