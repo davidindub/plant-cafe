@@ -190,7 +190,8 @@ nav li {
     grid-template-columns: 1fr;
     grid-template-areas:
         "findus-address"
-        "findus-map";
+        "findus-map" 
+        "findus-form";
 }
 
 #findus-address {
@@ -203,8 +204,8 @@ nav li {
     grid-area: findus-map;
 }
 
-.find-us-facilities {
-    /* margin: 0 auto; */
+#findus-form {
+    grid-area: findus-form;
 }
 
 .findus-facilities ul li {
@@ -367,7 +368,8 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "findus-address findus-map"
-            "findus-address findus-map";
+            "findus-address findus-map" 
+            "findus-form findus-form";
     }
 
 
