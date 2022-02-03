@@ -195,10 +195,21 @@ nav li {
 
 #findus-address {
     grid-area: findus-address;
+    display: flex;
+    justify-content: center;
 }
 
 #findus-map {
     grid-area: findus-map;
+}
+
+.find-us-facilities {
+    /* margin: 0 auto; */
+}
+
+.findus-facilities ul li {
+    list-style-type: none;
+    text-align: left;
 }
 
 .home-cards {
@@ -330,15 +341,6 @@ footer {
         display: none;
     }
 
-
-    #findus-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "findus-address findus-map"
-            "findus-address findus-map";
-    }
-
     footer {
         font-size: 1rem;
     }
@@ -360,6 +362,14 @@ footer {
     #logo {
         font-size: 5rem;
     }
+
+    #findus-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "findus-address findus-map"
+            "findus-address findus-map";
+    }
+
 
     #footer-nav {
         flex-direction: column;
