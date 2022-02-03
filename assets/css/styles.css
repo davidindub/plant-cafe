@@ -243,6 +243,28 @@ nav li {
     margin-bottom: 1rem;
 }
 
+/* Form Styles */
+
+form {
+    text-align: left;
+}
+
+input, textarea {
+    border: 2px solid var(--color-primary);
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 95%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: var(--color-primary);
+    color: var(--color-off-white);
+    cursor: pointer;
+}
+
 footer {
     background-color: var(--color-off-white);
     text-align: center;
