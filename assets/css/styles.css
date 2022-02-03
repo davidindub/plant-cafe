@@ -134,6 +134,8 @@ nav li {
     padding: 0 1rem;
 }
 
+/* Hero Image Styles */
+
 .hero-image {
     position: relative;
     width: 100%;
@@ -181,9 +183,7 @@ nav li {
     margin-top: 2rem;
 }
 
-/* #page-title {
-    grid-area: page-title;
-} */
+/* Find Us page Styles */
 
 #findus-content {
     display: grid;
@@ -206,12 +206,26 @@ nav li {
 
 #findus-form {
     grid-area: findus-form;
+    justify-content: center;
+}
+
+#findus-form form {
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .findus-facilities ul li {
     list-style-type: none;
     text-align: left;
 }
+
+.findus-facilities i {
+    color: var(--color-primary);
+    padding-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Homepage Cards Styles */
 
 .home-cards {
     background-color: var(--color-primary);
