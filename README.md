@@ -9,13 +9,17 @@ The plants are not sold online, but the website will include some tips on keepin
 The main target of the website are people looking for quick information such as the food & drinks menu, or the location and opening house of the shop and it is expected most of these visitors will be checking the website quickly on a mobile device. Delivering this information quickly and clearly is the main aim of the project.
 
 
-## Use Stories
+## User Stories
 
-- As a tourist, I want to find out when the café is open and where it is so I can visit.
+- As a tourist, I want to find out when the café is open, and if it has WiFi and where it is so I can visit and use my laptop.
 
 - As a plant enthusiast, I want to find out about upcoming events.
 
 - As a vegan, I want to find out if there is many options for me to eat at the cafe.
+
+- As a wheelchair user, I want to find out if the cafe has accessible facilities
+
+- As a parent, I want to know if the cafe is child friendly so I can bring my baby with me to meet a friend.
 
 ## Features 
 
