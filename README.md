@@ -15,11 +15,11 @@ The main target of the website are people looking for quick information such as 
 
 - As a plant enthusiast, I want to find out about upcoming events.
 
-- As a vegan, I want to find out if there is many options for me to eat at the cafe.
+- As a vegan, I want to find out if there is many options for me to eat at the cafe so I can meet my friend for lunch.
 
-- As a wheelchair user, I want to find out if the cafe has accessible facilities
+- As a wheelchair user, I want to find out if the cafe has accessible facilities so I can plan my visit.
 
-- As a parent, I want to know if the cafe is child friendly so I can bring my baby with me to meet a friend.
+- As a parent, I want to know if the cafe is child friendly so I can bring my baby with me to meet a friend for coffee.
 
 ## Features 
 
@@ -57,7 +57,7 @@ In this section, you should go over the different parts of your project, and des
 
 - __Find Us__
 
-  - This page provides the address of the cafe, an embedded Google Map of the location, and email and telephone details to contact the cafe.
+  - This page provides information about the facilities of the cafe, the address, an embedded Google Map of the location, and email and telephone details to contact the cafe.
 
 - __Events__
 
