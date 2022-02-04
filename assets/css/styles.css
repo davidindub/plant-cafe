@@ -3,9 +3,9 @@
 
 /* Variables for Colors and Fonts */
 :root {
-    --main-bg-color: rgb(176, 187, 186);
+    --main-bg-color: rgb(223, 228, 227);
     --color-primary: rgba(15, 74, 59, 1);
-    --color-secondary: rgba(160, 143, 101, 1);
+    --color-secondary: rgba(255, 194, 101, 1);
     --color-off-white: rgb(237, 237, 237);
 
     --font-headings: 'Rasa', serif;
@@ -190,7 +190,7 @@ nav li {
     grid-template-columns: 1fr;
     grid-template-areas:
         "findus-img"
-        "findus-address"
+        "findus-facilities"
         "findus-map"
         "findus-form"
     ;
@@ -201,8 +201,8 @@ nav li {
     grid-area: findus-img;
 }
 
-#findus-address {
-    grid-area: findus-address;
+#findus-facilities {
+    grid-area: findus-facilities;
     display: flex;
     justify-content: center;
 }
@@ -228,12 +228,12 @@ nav li {
     float: right;
 }
 
-.findus-facilities ul li {
+.findus-facilities-inner ul li {
     list-style-type: none;
     text-align: left;
 }
 
-.findus-facilities i {
+.findus-facilities-inner i {
     color: var(--color-primary);
     padding-right: 0.5rem;
     font-size: 1.3rem;
@@ -392,7 +392,7 @@ footer {
     #findus-content {
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
-            "findus-address findus-address findus-address findus-img findus-img findus-img"
+            "findus-facilities findus-facilities findus-facilities findus-img findus-img findus-img"
             "findus-map findus-map findus-map . . ."
             "findus-form findus-form findus-form findus-form findus-form findus-form";
     }
@@ -434,7 +434,7 @@ footer {
     #findus-content {
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
-            "findus-address findus-address . findus-img findus-img findus-img"
+            "findus-facilities findus-facilities . findus-img findus-img findus-img"
             "findus-map findus-map findus-map . . ."
             "findus-form findus-form findus-form findus-form findus-form findus-form";
     }
