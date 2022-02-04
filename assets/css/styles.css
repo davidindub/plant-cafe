@@ -189,8 +189,9 @@ nav li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        "findus-img"
-        "findus-facilities"
+    "findus-facilities"
+    "findus-img"
+        "findus-address"
         "findus-map"
         "findus-form"
     ;
@@ -205,10 +206,18 @@ nav li {
     grid-area: findus-facilities;
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 #findus-map {
     grid-area: findus-map;
+}
+
+#findus-address {
+    grid-area: findus-address;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #findus-form {
@@ -393,7 +402,7 @@ footer {
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
             "findus-facilities findus-facilities findus-facilities findus-img findus-img findus-img"
-            "findus-map findus-map findus-map . . ."
+            "findus-map findus-map findus-map findus-address findus-address findus-address"
             "findus-form findus-form findus-form findus-form findus-form findus-form";
     }
 
@@ -432,13 +441,7 @@ footer {
     }
 
     #findus-content {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-areas:
-            "findus-facilities findus-facilities . findus-img findus-img findus-img"
-            "findus-map findus-map findus-map . . ."
-            "findus-form findus-form findus-form findus-form findus-form findus-form";
     }
-
 
     #footer-nav {
         flex-direction: column;
