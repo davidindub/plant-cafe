@@ -189,9 +189,16 @@ nav li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
+        "findus-img"
         "findus-address"
-        "findus-map" 
-        "findus-form";
+        "findus-map"
+        "findus-form"
+    ;
+}
+
+#findus-img {
+     background-color: var(--color-primary);
+    grid-area: findus-img;
 }
 
 #findus-address {
@@ -206,12 +213,19 @@ nav li {
 
 #findus-form {
     grid-area: findus-form;
+    padding: 2rem 0;
     justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-off-white)
 }
 
 #findus-form form {
     margin: 0 auto;
     max-width: 600px;
+}
+
+#findus-form input[type=submit] {
+    float: right;
 }
 
 .findus-facilities ul li {
@@ -229,11 +243,9 @@ nav li {
 
 .home-cards {
     background-color: var(--color-primary);
-    ;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -263,20 +275,27 @@ form {
     text-align: left;
 }
 
-input, textarea {
+input,
+textarea {
     border: 2px solid var(--color-primary);
     padding: 0.1rem;
     margin: 0.1rem;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
     width: 95%;
+    padding: 0.25rem 1rem;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: var(--color-primary);
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: var(--color-secondary);
     color: var(--color-off-white);
     cursor: pointer;
+    padding: 0.2rem 2rem;
 }
 
 footer {
@@ -370,6 +389,14 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    #findus-content {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "findus-address findus-address findus-address findus-img findus-img findus-img"
+            "findus-map findus-map findus-map . . ."
+            "findus-form findus-form findus-form findus-form findus-form findus-form";
+    }
+
     .hero-inner h2 {
         font-size: 2.5rem;
     }
@@ -400,12 +427,16 @@ footer {
         font-size: 5rem;
     }
 
+    #findus-img {
+        display: inline;
+    }
+
     #findus-content {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
-            "findus-address findus-map"
-            "findus-address findus-map" 
-            "findus-form findus-form";
+            "findus-address findus-address . findus-img findus-img findus-img"
+            "findus-map findus-map findus-map . . ."
+            "findus-form findus-form findus-form findus-form findus-form findus-form";
     }
 
 
