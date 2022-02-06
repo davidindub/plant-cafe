@@ -189,8 +189,8 @@ nav li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "findus-facilities"
-    "findus-img"
+        "findus-facilities"
+        "findus-img"
         "findus-address"
         "findus-map"
         "findus-form"
@@ -198,7 +198,7 @@ nav li {
 }
 
 #findus-img {
-     background-color: var(--color-primary);
+    background-color: var(--color-primary);
     grid-area: findus-img;
 }
 
@@ -256,6 +256,19 @@ nav li {
 
 .menu-section dd {
     font-size: smaller;
+}
+
+.menu-section {
+    padding-top: 2rem;
+}
+
+.menu-section h1,
+h2 {
+    color: var(--color-primary);
+}
+
+.menu-section h3 {
+    padding-top: 1.5rem;
 }
 
 /* Homepage Cards Styles */
@@ -448,9 +461,6 @@ footer {
 
     #findus-img {
         display: inline;
-    }
-
-    #findus-content {
     }
 
     #footer-nav {
