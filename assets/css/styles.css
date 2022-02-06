@@ -252,6 +252,7 @@ nav li {
 
 .menu-section dt {
     font-weight: bold;
+    padding-top: 0.5rem;
 }
 
 .menu-section dd {
@@ -273,22 +274,32 @@ h2 {
 
 .menu-content {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "menu-drinks" 
+    "menu-drinks-hot"
+    "menu-drinks-cold" 
     "menu-sweet" 
     "menu-lunch";
 }
 
-#menu-drinks-img, #menu-sweet-img, #menu-lunch-img {
+#menu-drinks-hot-img, #menu-drinks-cold-img, #menu-sweet-img, #menu-lunch-img {
     display: none;
 }
 
-#menu-drinks {
-    grid-area: menu-drinks;
+#menu-drinks-hot {
+    grid-area: menu-drinks-hot;
 }
 
-#menu-drinks-img {
-    grid-area: menu-drinks-img;
+#menu-drinks-hot-img {
+    grid-area: menu-drinks-hot-img;
+}
+
+#menu-drinks-cold {
+    grid-area: menu-drinks-cold;
+}
+
+#menu-drinks-cold-img {
+    grid-area: menu-drinks-cold-img;
 }
 
 #menu-sweet {
@@ -470,12 +481,13 @@ footer {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         grid-template-areas: 
-        "menu-drinks menu-drinks menu-drinks . menu-drinks-img menu-drinks-img"
-        "menu-sweet-img menu-sweet-img . menu-sweet menu-sweet menu-sweet" 
-        "menu-lunch menu-lunch menu-lunch . menu-lunch-img menu-lunch-img";
+        "menu-drinks-hot menu-drinks-hot menu-drinks-hot . menu-drinks-hot-img menu-drinks-hot-img" 
+        "menu-drinks-cold-img menu-drinks-cold-img . menu-drinks-cold menu-drinks-cold menu-drinks-cold"
+        "menu-sweet menu-sweet menu-sweet . menu-sweet-img menu-sweet-img" 
+        "menu-lunch-img menu-lunch-img . menu-lunch menu-lunch menu-lunch";
     }
 
-    #menu-drinks-img, #menu-sweet-img, #menu-lunch-img {
+    #menu-drinks-hot-img, #menu-drinks-cold-img, #menu-sweet-img, #menu-lunch-img {
         display: inline;
     }
 
