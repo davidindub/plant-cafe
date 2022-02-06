@@ -271,6 +271,43 @@ h2 {
     padding-top: 1.5rem;
 }
 
+.menu-content {
+    display: grid;
+    grid-template-areas: 
+    "menu-drinks" 
+    "menu-sweet" 
+    "menu-lunch";
+}
+
+#menu-drinks-img, #menu-sweet-img, #menu-lunch-img {
+    display: none;
+}
+
+#menu-drinks {
+    grid-area: menu-drinks;
+}
+
+#menu-drinks-img {
+    grid-area: menu-drinks-img;
+}
+
+#menu-sweet {
+    grid-area: menu-sweet;
+}
+
+#menu-sweet-img {
+    grid-area: menu-sweet-img;
+}
+
+#menu-lunch {
+    grid-area: menu-lunch;
+}
+
+#menu-lunch-img {
+    grid-area: menu-lunch-img;
+}
+
+
 /* Homepage Cards Styles */
 
 .home-cards {
@@ -427,6 +464,19 @@ footer {
             "findus-facilities findus-facilities findus-facilities findus-img findus-img findus-img"
             "findus-map findus-map findus-map findus-address findus-address findus-address"
             "findus-form findus-form findus-form findus-form findus-form findus-form";
+    }
+
+    .menu-content {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menu-drinks menu-drinks menu-drinks . menu-drinks-img menu-drinks-img"
+        "menu-sweet-img menu-sweet-img . menu-sweet menu-sweet menu-sweet" 
+        "menu-lunch menu-lunch menu-lunch . menu-lunch-img menu-lunch-img";
+    }
+
+    #menu-drinks-img, #menu-sweet-img, #menu-lunch-img {
+        display: inline;
     }
 
     .hero-inner h2 {
