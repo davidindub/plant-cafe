@@ -248,6 +248,16 @@ nav li {
     font-size: 1.3rem;
 }
 
+/* Menu Page Styles */
+
+.menu-section dt {
+    font-weight: bold;
+}
+
+.menu-section dd {
+    font-size: smaller;
+}
+
 /* Homepage Cards Styles */
 
 .home-cards {
