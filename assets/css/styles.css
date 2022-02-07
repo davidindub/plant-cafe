@@ -297,8 +297,16 @@ h2 {
     grid-area: menu-drinks-hot;
 }
 
+.menu-img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #menu-drinks-hot-img {
     grid-area: menu-drinks-hot-img;
+    background-image: url("/assets/images/menu-coffee.jpg");
 }
 
 #menu-drinks-cold {
@@ -307,6 +315,7 @@ h2 {
 
 #menu-drinks-cold-img {
     grid-area: menu-drinks-cold-img;
+    background-image: url("/assets/images/menu-juice.jpg");
 }
 
 #menu-sweet {
@@ -315,6 +324,7 @@ h2 {
 
 #menu-sweet-img {
     grid-area: menu-sweet-img;
+    background-image: url("/assets/images/menu-sweet.jpg");
 }
 
 #menu-lunch {
@@ -323,6 +333,7 @@ h2 {
 
 #menu-lunch-img {
     grid-area: menu-lunch-img;
+    background-image: url("/assets/images/menu-croissant.jpg");
 }
 
 
