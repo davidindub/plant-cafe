@@ -108,6 +108,7 @@ a.card:hover h2 {
 #logo a:hover,
 #logo a:focus {
     text-decoration: none;
+    text-decoration-color: transparent;
 }
 
 
@@ -195,6 +196,7 @@ nav li {
         "findus-map"
         "findus-form"
     ;
+    justify-items: center;
 }
 
 #findus-img {
@@ -204,9 +206,14 @@ nav li {
 
 #findus-facilities {
     grid-area: findus-facilities;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     padding-bottom: 2rem;
+}
+
+#findus-ul {
+    text-align: left;
+    list-style: none;
 }
 
 #findus-map {
