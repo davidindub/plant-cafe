@@ -111,9 +111,6 @@ In this section you need to reference where you got your content, media and extr
 
 You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
-- [Stack Overflow - Can't figure out what is causing the side scroll on my website](https://stackoverflow.com/questions/35193617/cant-figure-out-what-is-causing-the-side-scroll-on-my-website)
-I encountered problem where my page would have a horizontal scroll to the right in Chrome yet no content seemed to be causing it, and the problem was to do with the browser scroll bar, adding overflow-x: hidden to the body element fixed this issue.
-
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A
@@ -122,11 +119,7 @@ I encountered problem where my page would have a horizontal scroll to the right 
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
+- The photos used are from [Unsplash](https://unsplash.com/), credit to [Daniela Constantini](https://www.pexels.com/@daniela-constantini), [Fernando Hernandez](https://unsplash.com/@_ferh97), [Nikola Jovanovic](https://unsplash.com/@danteov_seen), [Nathan Dumlao](https://unsplash.com/@nate_dumlao), and [Ruben Ramirez](https://unsplash.com/@pinchebesu).
 
 ## Other General Project Advice
 
