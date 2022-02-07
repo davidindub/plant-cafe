@@ -206,8 +206,6 @@ nav li {
 
 #findus-facilities {
     grid-area: findus-facilities;
-    /* display: flex; */
-    /* justify-content: center; */
     padding-bottom: 2rem;
 }
 
@@ -266,10 +264,6 @@ nav li {
     font-size: smaller;
 }
 
-.menu-section {
-    padding-top: 2rem;
-}
-
 .menu-section h1,
 h2 {
     color: var(--color-primary);
@@ -289,19 +283,19 @@ h2 {
     "menu-lunch";
 }
 
-#menu-drinks-hot-img, #menu-drinks-cold-img, #menu-sweet-img, #menu-lunch-img {
+.menu-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-img {
     display: none;
 }
 
 #menu-drinks-hot {
     grid-area: menu-drinks-hot;
-}
-
-.menu-img {
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #menu-drinks-hot-img {
@@ -316,6 +310,7 @@ h2 {
 #menu-drinks-cold-img {
     grid-area: menu-drinks-cold-img;
     background-image: url("/assets/images/menu-juice.jpg");
+    background-position: bottom;
 }
 
 #menu-sweet {
@@ -325,6 +320,7 @@ h2 {
 #menu-sweet-img {
     grid-area: menu-sweet-img;
     background-image: url("/assets/images/menu-sweet.jpg");
+    background-position: bottom;
 }
 
 #menu-lunch {
@@ -495,18 +491,22 @@ footer {
             "findus-form findus-form findus-form findus-form findus-form findus-form";
     }
 
-    .menu-content {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "menu-drinks-hot menu-drinks-hot menu-drinks-hot . menu-drinks-hot-img menu-drinks-hot-img" 
-        "menu-drinks-cold-img menu-drinks-cold-img . menu-drinks-cold menu-drinks-cold menu-drinks-cold"
-        "menu-sweet menu-sweet menu-sweet . menu-sweet-img menu-sweet-img" 
-        "menu-lunch-img menu-lunch-img . menu-lunch menu-lunch menu-lunch";
+    .menu-img {
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline;
     }
 
-    #menu-drinks-hot-img, #menu-drinks-cold-img, #menu-sweet-img, #menu-lunch-img {
-        display: inline;
+    .menu-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menu-drinks-hot menu-drinks-hot-img" 
+        "menu-drinks-cold-img menu-drinks-cold"
+        "menu-sweet menu-sweet-img" 
+        "menu-lunch-img menu-lunch";
     }
 
     .hero-inner h2 {
