@@ -177,7 +177,7 @@ nav li {
 }
 
 :focus {
-    outline: none;
+    outline: 3px solid var(--color-secondary);
 }
 
 #hero-button {
