@@ -74,6 +74,7 @@ header {
 
 main {
     background-color: var(--color-off-white);
+    padding-bottom: 1rem;
 }
 
 h1,
@@ -118,11 +119,14 @@ nav {
 }
 
 a.card:hover h2,
-a.card:focus h2,
-footer a:hover,
-footer a:focus {
+a.card:focus h2 {
     color: var(--color-primary);
 }
+
+/* footer a:hover,
+footer a:focus {
+    color: var(--color-secondary);
+} */
 
 
 nav ul,
@@ -166,6 +170,7 @@ nav li {
     color: var(--color-off-white);
     border: none;
     padding: 1rem 2rem;
+    margin-top: 2rem;
     display: inline-block;
     font-size: 16px;
 }
@@ -174,15 +179,12 @@ nav li {
 #hero-button:focus {
     background-color: var(--color-secondary);
     color: #000;
+    text-decoration: none;
 }
 
-:focus {
+/* :focus {
     outline: 3px solid var(--color-secondary);
-}
-
-#hero-button {
-    margin-top: 2rem;
-}
+} */
 
 /* Find Us page Styles */
 
@@ -202,6 +204,10 @@ nav li {
 #findus-img {
     background-color: var(--color-primary);
     grid-area: findus-img;
+}
+
+#findus-img img {
+    width: 100%;
 }
 
 #findus-facilities {
@@ -230,7 +236,8 @@ nav li {
     padding: 2rem 0;
     justify-content: center;
     background-color: var(--color-primary);
-    color: var(--color-off-white)
+    color: var(--color-off-white);
+    width: 100%;
 }
 
 #findus-form form {
@@ -393,7 +400,8 @@ input[type=reset] {
 }
 
 footer {
-    background-color: var(--color-off-white);
+    background-color: var(--color-primary);
+    color: var(--color-off-white);
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -421,7 +429,7 @@ footer li {
 
 .footer-socials i:hover,
 .footer-socials i:focus {
-    color: var(--color-primary);
+    color: var(--color-secondary);
     ;
 }
 
@@ -458,16 +466,16 @@ footer {
 .iframe-container {
     position: relative;
     width: 100%;
+    height: 300px;
     overflow: hidden;
-    padding-top: 56.25%;
 }
 
 .responsive-iframe {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
+    right: 0; */
     width: 100%;
     height: 100%;
     border: none;
@@ -483,20 +491,21 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #findus-content {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-areas:
-            "findus-facilities findus-facilities findus-facilities findus-img findus-img findus-img"
-            "findus-map findus-map findus-map findus-address findus-address findus-address"
-            "findus-form findus-form findus-form findus-form findus-form findus-form";
-    }
-
     .menu-img {
         aspect-ratio: 1 / 1;
         width: 100%;
         background-repeat: no-repeat;
         background-position: center;
         display: inline;
+    }
+
+    #findus-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "findus-facilities findus-facilities"
+            "findus-img findus-address"
+            "findus-map findus-map"
+            "findus-form findus-form";
     }
 
     .menu-content {
@@ -520,10 +529,6 @@ footer {
     footer {
         font-size: 1rem;
     }
-
-    #hero-button {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -537,6 +542,14 @@ footer {
 
     #logo {
         font-size: 5rem;
+    }
+
+    #findus-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "findus-facilities findus-img"
+            "findus-map findus-address"
+            "findus-form findus-form";
     }
 
     #findus-img {
