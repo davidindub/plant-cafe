@@ -378,6 +378,12 @@ h2 {
     margin-bottom: 1rem;
 }
 
+#main-welcome {
+    grid-area: main-welcome;
+    width: clamp(300px, 95%, 600px);
+    margin: 0 auto;
+}
+
 /* Form Styles */
 
 form {
