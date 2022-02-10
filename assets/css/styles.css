@@ -57,7 +57,8 @@ select {
 /* My Styles */
 
 .container {
-    width: 100%;
+    /* width: 100%; */
+    width: clamp(320px, 100%, 1200px);
     margin: 0 auto;
 }
 
@@ -226,6 +227,7 @@ nav li {
 
 #findus-address {
     grid-area: findus-address;
+    min-height: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,6 +242,11 @@ nav li {
     width: 100%;
 }
 
+#findus-form h2 {
+    color: var(--color-off-white);
+    font-size: 2rem;
+}
+
 #findus-form form {
     margin: 0 auto;
     max-width: 600px;
@@ -247,6 +254,7 @@ nav li {
 
 #findus-form input[type=submit] {
     float: right;
+    color: #000;
 }
 
 .findus-facilities-inner ul li {
@@ -482,11 +490,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     .home-cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
