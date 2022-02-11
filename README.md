@@ -29,9 +29,9 @@ In this section, you should go over the different parts of your project, and des
 
 - __Navigation Bar__
 
-  - All pages feature the same responsive navigation bar with links to the homepage, Food Menu, Location & Contact Form, and Events page. This allows the user to easily navigate the site.
+  - All pages feature the same responsive navigation bar with links to the Landing Page, Food Menu, Location & Contact Form, and Events page. This allows the user to easily navigate the site.
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
+  - The page the user is currently on is marked with a subtle underline to aide navigation.
 
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
@@ -39,7 +39,7 @@ In this section, you should go over the different parts of your project, and des
 
 - __The landing page image__
 
-  - The landing page features a large eye catching photograph with text overlayed, on smaller displays such as a phone it includes a button which when clicked scrolls the page down to the most important information the users might be looking for.
+  - The landing page features a large eye catching photograph with text overlayed, and a button which when clicked scrolls the page down to the most important information the users might be looking for.
   The text adapts so that the image does not get obscured different screens sizes.
 
 
@@ -96,7 +96,9 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+- I deployed the project to GitHub pages. I had previously set up a custom domain with GitHub Pages for my personal landing page, so the URL features my own domaim.
+
+The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
@@ -106,16 +108,13 @@ The live link can be found here - http://www.davidindub.com/plant-cafe/
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
 - I used [Dribble](https://dribbble.com/) to research designs to pick my color palette.
 - The text for each page was written by myself, drawing on my past experience as a barista and chef.
 - The icons used on the Find Us page and footer were taken from [Font Awesome](https://fontawesome.com/).
 - I used the [MDN Web Docs](https://developer.mozilla.org/en-US/) for help using CSS Variables for the colors and fonts, and help using CSS Grid Template Areas.
+- I read [W3 Schools](https://www.w3schools.com/) for information on semantic HTML and Accessibility guidelines. 
 - I watched some videos on [Kevin Powell's YouTube channel](https://www.youtube.com/kepowob) for help with responsive design, and learned about the `clamp()` function.
 - I discovered the App [Eagle](https://en.eagle.cool/) when starting the project which was invaluable for organising all my reference images in one place, and I will use it in fuutre for all my projects.
 
