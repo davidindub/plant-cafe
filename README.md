@@ -6,7 +6,7 @@ The shop serves specialty coffee and plant-based food, sells houseplants in stor
 
 The plants are not sold online, but the website will include some tips on keeping houseplants, as well as a signup form for a newsletter on upcoming events.
 
-The main target of the website are people looking for quick information such as the food & drinks menu, or the location and opening house of the shop and it is expected most of these visitors will be checking the website quickly on a mobile device. Delivering this information quickly and clearly is the main aim of the project.
+The main target of the website are people looking for quick information such as the food & drinks menu, or the location and opening house of the shop and it is expected most of these visitors will be checking the website quickly on a mobile device. Delivering this information quickly and clearly is the main aim of the project, and the language used is friendly and welcoming.
 
 
 ## User Stories
@@ -32,13 +32,15 @@ In this section, you should go over the different parts of your project, and des
   - All pages feature the same responsive navigation bar with links to the homepage, Food Menu, Location & Contact Form, and Events page. This allows the user to easily navigate the site.
 
   - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
+
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
 ![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
 
 - __The landing page image__
 
-  - The landing page features a large eye catching photograph with text overlayed, on smaller displays such as a phone it includes a button which when clicked scrolls the page down to the most important information the users might be looking for,
+  - The landing page features a large eye catching photograph with text overlayed, on smaller displays such as a phone it includes a button which when clicked scrolls the page down to the most important information the users might be looking for.
+  The text adapts so that the image does not get obscured different screens sizes.
 
 
 - __Cards on Landing Page__
@@ -53,19 +55,16 @@ In this section, you should go over the different parts of your project, and des
 
 - __Menu__
 
-  - The Menu page provides the user with the list of Food and Drink options and prices available at the cafe.
+  - The Menu page provides the user with the list of Food and Drink options and prices available at the cafe along side images of some of the dishes.
 
 - __Find Us__
 
-  - This page provides information about the facilities of the cafe, the address, an embedded Google Map of the location, and email and telephone details to contact the cafe.
+  - This page provides information about the facilities of the cafe, the address, an embedded Google Map of the location, and a form to to contact the cafe.
 
 - __Events__
 
   - This page lists upcoming events happening at the cafe, and provides a form for a newsletter for users to find out about future events.
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
@@ -102,7 +101,7 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - http://www.davidindub.com/plant-cafe/
 
 
 ## Credits 
@@ -113,9 +112,12 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- I used [Dribble](https://dribbble.com/) to research designs to pick my color palette.
+- The text for each page was written by myself, drawing on my past experience as a barista and chef.
+- The icons used on the Find Us page and footer were taken from [Font Awesome](https://fontawesome.com/).
+- I used the [MDN Web Docs](https://developer.mozilla.org/en-US/) for help using CSS Variables for the colors and fonts, and help using CSS Grid Template Areas.
+- I watched some videos on [Kevin Powell's YouTube channel](https://www.youtube.com/kepowob) for help with responsive design, and learned about the `clamp()` function.
+- I discovered the App [Eagle](https://en.eagle.cool/) when starting the project which was invaluable for organising all my reference images in one place, and I will use it in fuutre for all my projects.
 
 ### Media
 
@@ -135,5 +137,3 @@ Below you will find a couple of extra tips that may be helpful when completing y
   - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
   - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
   - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
