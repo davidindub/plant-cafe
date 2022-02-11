@@ -58,7 +58,6 @@ select {
 /* My Styles */
 
 .container {
-    /* width: 100%; */
     width: clamp(320px, 100%, 1200px);
     margin: 0 auto;
 }
@@ -97,6 +96,7 @@ a:hover:not(.card),
 a:focus:not(.card),
 nav a[class="active"],
 a.card:hover h2 {
+    color: var(--color-secondary);
     text-decoration: underline;
     text-decoration-thickness: 0.3em;
     text-decoration-color: initial;
@@ -110,6 +110,7 @@ a.card:hover h2 {
 
 #logo a:hover,
 #logo a:focus {
+    color: var(--color-off-white);
     text-decoration: none;
     text-decoration-color: transparent;
 }
@@ -255,15 +256,16 @@ a.card:focus h2 {
     color: #000;
 }
 
-.findus-facilities-inner ul li {
+#findus-ul li {
     list-style-type: none;
     text-align: left;
 }
 
-.findus-facilities-inner i {
+#findus-ul li i {
     color: var(--color-primary);
     padding-right: 0.5rem;
     font-size: 1.3rem;
+    padding-right: 1rem;
 }
 
 /* Menu Page Styles */
@@ -402,7 +404,7 @@ input[type=reset] {
     background-color: var(--color-secondary);
     color: var(--color-off-white);
     cursor: pointer;
-    padding: 0.2rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 footer {
