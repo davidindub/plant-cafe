@@ -96,8 +96,8 @@ p {
     line-height: 1.8;
 }
 
-a:hover:not(.card, #logo-link),
-a:focus:not(.card, #logo-link),
+a:hover:not(.card, #logo-link, #hero-button),
+a:focus:not(.card, #logo-link, #hero-button),
 nav a[class="active"],
 a.card:hover h2 {
     text-decoration: underline;
@@ -105,12 +105,15 @@ a.card:hover h2 {
     text-decoration-color: initial;
 }
 
-a:hover:not(.card, #logo-link),
-a:focus:not(.card, #logo-link),
-a.card:hover h2,
+a:hover:not(.card, #logo-link, #hero-button),
+a:focus:not(.card, #logo-link, #hero-button),
 .footer-socials i:hover,
 .footer-socials i:focus {
     color: var(--color-secondary);
+}
+
+.card:focus {
+    outline: 3px solid var(--color-secondary);
 }
 
 #logo {
@@ -133,11 +136,6 @@ nav li {
     display: inline;
     padding: 0 0.9rem;
     font-size: 0.9rem;
-}
-
-a.card:hover h2,
-a.card:focus h2 {
-    color: var(--color-primary);
 }
 
 
@@ -378,6 +376,11 @@ form {
     text-align: left;
 }
 
+form label {
+    font-size: smaller;
+    letter-spacing: .05rem;
+}
+
 input,
 textarea {
     border: 2px solid var(--color-primary);
@@ -399,6 +402,14 @@ input[type=reset] {
     color: var(--color-off-white);
     cursor: pointer;
     padding: 0.5rem 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: var(--color-off-white);
+    color: #000;
 }
 
 footer {
