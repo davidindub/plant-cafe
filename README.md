@@ -1,5 +1,7 @@
 # Plant Cafe
 
+![amiresponsive-screenshot](https://user-images.githubusercontent.com/69420622/153647576-32cab957-ec42-4734-901e-5e8ecb1dcc6a.jpg)
+
 The project is to make a simple website for a Cafe and Houseplant Shop in Dublin City.
 
 The shop serves specialty coffee and plant-based food, sells houseplants in store and frequently hosts events about growing plants.
