@@ -6,6 +6,7 @@
     --main-bg-color: rgb(223, 228, 227);
     --color-primary: rgba(15, 74, 59, 1);
     --color-secondary: rgba(255, 194, 101, 1);
+    --color-white: rgba(255, 255, 255, 1);
     --color-off-white: rgb(237, 237, 237);
 
     --font-headings: 'Rasa', serif;
@@ -74,7 +75,7 @@ header {
 }
 
 main {
-    background-color: var(--color-off-white);
+    background-color: var(--color-white);
     padding-bottom: 1rem;
 }
 
@@ -119,17 +120,6 @@ nav {
     padding-bottom: .5rem;
 }
 
-a.card:hover h2,
-a.card:focus h2 {
-    color: var(--color-primary);
-}
-
-/* footer a:hover,
-footer a:focus {
-    color: var(--color-secondary);
-} */
-
-
 nav ul,
 footer ul {
     list-style: none;
@@ -137,8 +127,15 @@ footer ul {
 
 nav li {
     display: inline;
-    padding: 0 1rem;
+    padding: 0 0.9rem;
+    font-size: 0.9rem;
 }
+
+a.card:hover h2,
+a.card:focus h2 {
+    color: var(--color-primary);
+}
+
 
 /* Hero Image Styles */
 
@@ -193,6 +190,7 @@ nav li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
+        "page-title" 
         "findus-facilities"
         "findus-img"
         "findus-address"
@@ -293,6 +291,7 @@ h2 {
     grid-template-columns: auto;
     row-gap: 2rem;
     grid-template-areas: 
+    "page-title page-title" 
     "menu-drinks-hot-img menu-sweet-img"
     "menu-drinks-hot menu-drinks-hot"
     "menu-drinks-cold menu-drinks-cold" 
@@ -353,7 +352,7 @@ h2 {
 }
 
 .card {
-    background-color: var(--color-off-white);
+    background-color: var(--color-white);
     padding: 1rem;
     margin: 1rem;
 }
@@ -460,6 +459,9 @@ nav {
 
 #page-title {
     padding: 1rem 0;
+    font-size: 2.5rem;
+    background-color: #fff;
+    grid-area: page-title;
 }
 
 #main-content {
@@ -489,6 +491,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    nav ul li {
+        font-size: 1.1rem;
+    }
+
     .home-cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -504,6 +510,7 @@ footer {
     #findus-content {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
+            "page-title page-title" 
             "findus-facilities findus-facilities"
             "findus-img findus-address"
             "findus-map findus-map"
@@ -511,10 +518,9 @@ footer {
     }
 
     .menu-content {
-        /* grid-template-columns: repeat(2, 1fr); */
         row-gap: 0;
-        grid-template-rows: auto;
         grid-template-areas: 
+        "page-title page-title" 
         "menu-drinks-hot menu-drinks-hot-img" 
         "menu-drinks-cold-img menu-drinks-cold"
         "menu-sweet menu-sweet-img" 
@@ -550,6 +556,7 @@ footer {
     #findus-content {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
+           "page-title page title" 
             "findus-facilities findus-img"
             "findus-map findus-address"
             "findus-form findus-form";
