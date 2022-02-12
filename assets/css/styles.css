@@ -161,7 +161,7 @@ nav li {
 }
 
 .hero-inner h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 #hero-button {
@@ -184,16 +184,18 @@ nav li {
 .home-cards {
     background-color: var(--color-primary);
     display: grid;
+    gap: 1.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    padding: 2rem 1.5rem;
 }
 
 .card {
     background-color: var(--color-white);
     padding: 1rem;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .card img {
@@ -205,7 +207,7 @@ nav li {
     padding-top: 1rem;
 }
 
-.card p {
+.card p, .card time {
     margin-bottom: 1rem;
 }
 
@@ -370,6 +372,32 @@ h2 {
     grid-area: menu-lunch-img;
 }
 
+/* Events Styles */
+
+#events-content {
+    background-color: var(--color-primary);
+}
+
+.event {
+    padding: 1.5rem 1.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.event .card {
+    height: 100%;
+}
+
+.event-details {
+    height: 100%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Form Styles */
 
 form {
@@ -513,6 +541,10 @@ footer {
             "menu-drinks-cold-img menu-drinks-cold"
             "menu-sweet menu-sweet-img"
             "menu-lunch-img menu-lunch";
+    }
+
+    .event {
+        grid-template-columns: 1fr 1fr;
     }
 
     .hero-inner h2 {
