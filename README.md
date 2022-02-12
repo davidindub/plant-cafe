@@ -9,7 +9,7 @@ The shop serves specialty coffee and plant-based food, sells houseplants in stor
 
 The plants are not sold online, but the website will include some tips on keeping houseplants, as well as a signup form for a newsletter on upcoming events.
 
-The main target of the website are people looking for quick information such as the food & drinks menu, or the location and opening house of the shop and it is expected most of these visitors will be checking the website quickly on a mobile device. Delivering this information quickly and clearly is the main aim of the project, and the language used is friendly and welcoming.
+The main target of the website are people looking for quick information such as the food & drinks menu, or the location and opening hours of the shop and it is expected most of these visitors will be checking the website quickly on a mobile device. Delivering this information quickly and clearly is the main aim of the project, and the language used is friendly and welcoming.
 
 
 ## User Stories
@@ -58,7 +58,9 @@ In this section, you should go over the different parts of your project, and des
 
 - __The Footer__ 
 
-<img width="397" alt="Screenshot of the project's footer" src="https://user-images.githubusercontent.com/69420622/153711362-c6a1c47a-e7d1-4d67-b517-fc5ab8dde351.png">
+<img width="397" alt="Screenshot of the project's footer on a mobile" src="https://user-images.githubusercontent.com/69420622/153711362-c6a1c47a-e7d1-4d67-b517-fc5ab8dde351.png">
+<img width="1338" alt="Screenshot of the project's footer on a computer screen" src="https://user-images.githubusercontent.com/69420622/153732545-24a02860-c6a0-410b-89a3-def40e6d1628.png">
+
 
   - The footer section includes the physical address and email address of the cafe, navigation links to the other pages of the website, and links to the cafe's social media accounts (all open in a new tab so as not to end the users visit to the Plant Cafe site)
   - The footer is responsive, the three sections and the nav links stack on mobile view, but use the extra available space on larger screens.
