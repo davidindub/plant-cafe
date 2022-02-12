@@ -1,6 +1,7 @@
 # Plant Cafe
 
-![amiresponsive-screenshot](https://user-images.githubusercontent.com/69420622/153647576-32cab957-ec42-4734-901e-5e8ecb1dcc6a.jpg)
+<img alt="The project displayed on a phone, tablet, laptop and desktop computer." src="https://user-images.githubusercontent.com/69420622/153647576-32cab957-ec42-4734-901e-5e8ecb1dcc6a.jpg">
+
 
 The project is to make a simple website for a Cafe and Houseplant Shop in Dublin City.
 
@@ -31,15 +32,18 @@ In this section, you should go over the different parts of your project, and des
 
 - __Navigation Bar__
 
+<img width="750" alt="Navigation Bar listing Home, Menu, Find Us and Events" src="https://user-images.githubusercontent.com/69420622/153711246-ceb209c0-8caf-4fa2-9fca-5a6cc266e251.png">
+
   - All pages feature the same responsive navigation bar with links to the Landing Page, Food Menu, Location & Contact Form, and Events page. This allows the user to easily navigate the site.
 
   - The page the user is currently on is marked with a subtle underline to aide navigation.
 
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
 
 - __The landing page image__
+
+<img width="479" alt="Iced Coffee being prepared surrounded by plants" src="https://user-images.githubusercontent.com/69420622/153711277-a9c66278-8876-4f55-8af3-efa853cc4d7f.png">
 
   - The landing page features a large eye catching photograph with text overlayed, and a button which when clicked scrolls the page down to the most important information the users might be looking for.
   The text adapts so that the image does not get obscured different screens sizes.
@@ -47,10 +51,14 @@ In this section, you should go over the different parts of your project, and des
 
 - __Cards on Landing Page__
 
+<img width="987" alt="Screenshot of the project's landing page cards" src="https://user-images.githubusercontent.com/69420622/153711326-72fbec6d-d7bd-40fe-99ba-4f8ce4136a68.png">
+
   - Three cards with related photographs describe the three pages of the website where the user might like to visit.
   - Clicking anywhere on each of these cards takes the user to the associated page, making the links easy to tap on mobile. There is a subtle underline and color change on hover/focus.
 
 - __The Footer__ 
+
+<img width="397" alt="Screenshot of the project's footer" src="https://user-images.githubusercontent.com/69420622/153711362-c6a1c47a-e7d1-4d67-b517-fc5ab8dde351.png">
 
   - The footer section includes the physical address and email address of the cafe, navigation links to the other pages of the website, and links to the cafe's social media accounts (all open in a new tab so as not to end the users visit to the Plant Cafe site)
   - The footer is responsive, the three sections and the nav links stack on mobile view, but use the extra available space on larger screens.
