@@ -221,25 +221,23 @@ nav li {
 
 #findus-content {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-areas:
-        "page-title"
-        "findus-facilities"
-        "findus-img"
-        "findus-address"
-        "findus-map"
-        "findus-form"
+        "page-title page-title"
+        "findus-facilities findus-facilities"
+        "findus-img findus-img2"
+        "findus-address findus-address"
+        "findus-map findus-map"
+        "findus-form findus-form"
     ;
     justify-items: center;
 }
 
 #findus-img {
-    background-color: var(--color-primary);
     grid-area: findus-img;
 }
 
-#findus-img img {
-    width: 100%;
+#findus-img2 {
+    grid-area: findus-img2;
 }
 
 #findus-facilities {
@@ -494,7 +492,7 @@ nav {
     grid-area: page-title;
 }
 
-#main-content {
+main {
     grid-area: main;
 }
 
@@ -528,8 +526,8 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "page-title page-title"
-            "findus-facilities findus-facilities"
-            "findus-img findus-address"
+            "findus-facilities findus-img"
+            "findus-img2 findus-address"
             "findus-map findus-map"
             "findus-form findus-form";
     }
