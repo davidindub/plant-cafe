@@ -217,6 +217,20 @@ nav li {
     margin: 0 auto;
 }
 
+#main-welcome h2 {
+    padding: 1rem 0;
+}
+
+#main-welcome a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+#main-welcome a:hover {
+    color: var(--color-primary);
+    text-decoration-thickness: 0.2rem;
+}
+
 /* Find Us page Styles */
 
 #findus-content {
