@@ -262,7 +262,7 @@ nav li {
     align-items: center;
 }
 
-#findus-form, #newsletter {
+#findus-form {
     grid-area: findus-form;
     padding: 2rem 0;
     justify-content: center;
@@ -271,20 +271,14 @@ nav li {
     width: 100%;
 }
 
-#findus-form h2, #newsletter h2 {
+#findus-form h2 {
     color: var(--color-off-white);
     font-size: 2rem;
 }
 
-#findus-form form, #newsletter {
+#findus-form form {
     margin: 0 auto;
     max-width: 600px;
-}
-
-#findus-form input[type=submit], #newsletter input[type=submit] {
-    margin-top: 1rem;
-    margin-left: auto;
-    color: #000;
 }
 
 #findus-ul li {
@@ -373,7 +367,7 @@ h2 {
 
 /* Events Styles */
 
-#events-content {
+.events-content {
     background-color: var(--color-primary);
 }
 
@@ -385,6 +379,11 @@ h2 {
     align-items: center;
 }
 
+.event:last-of-type {
+    padding-bottom: 1.5rem;
+}
+
+
 .event .card {
     height: 100%;
 }
@@ -395,6 +394,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#newsletter {
+    width: clamp(300px, 600px, 100%);
+    margin: 0 auto;
 }
 
 /* Form Styles */
@@ -430,12 +434,25 @@ input[type=reset] {
     padding: 0.5rem 2rem;
     transition: all 0.2s ease-in-out;
     border: 0;
+    margin-top: 1rem;
+    margin-left: auto;
+    color: #000;
 }
 
 input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
     background-color: var(--color-off-white);
+    color: #000;
+}
+
+#newsletter input[type=submit] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+#newsletter input[type=submit]:hover {
+    background-color: var(--color-secondary);
     color: #000;
 }
 
