@@ -604,15 +604,6 @@ footer {
         font-size: 5rem;
     }
 
-    #findus-content {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "page-title page title"
-            "findus-facilities findus-img"
-            "findus-map findus-address"
-            "findus-form findus-form";
-    }
-
     #footer-nav {
         flex-direction: column;
     }
