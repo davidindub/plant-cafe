@@ -51,7 +51,8 @@ picture {
 input,
 button,
 textarea,
-select {
+select,
+time {
     font: inherit;
 }
 
