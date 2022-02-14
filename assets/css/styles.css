@@ -7,6 +7,7 @@
     --color-primary: rgba(15, 74, 59, 1);
     --color-secondary: rgba(255, 194, 101, 1);
     --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(0, 0, 0, 1);
     --color-off-white: rgb(237, 237, 237);
 
     --font-headings: 'Rasa', serif;
@@ -205,7 +206,8 @@ nav li {
     padding-top: 1rem;
 }
 
-.card p, .card time {
+.card p,
+.card time {
     margin-bottom: 1rem;
 }
 
@@ -257,7 +259,7 @@ nav li {
     padding-bottom: 2rem;
 }
 
-#findus-ul {
+.findus-ul {
     text-align: left;
     list-style: none;
 }
@@ -268,8 +270,12 @@ nav li {
 
 #findus-address {
     grid-area: findus-address;
-    min-height: 12rem;
+}
+
+#findus-facilities,
+#findus-address {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -293,11 +299,11 @@ nav li {
     max-width: 600px;
 }
 
-#findus-ul li {
+.findus-ul li {
     text-align: left;
 }
 
-#findus-ul li i {
+.findus-ul li i {
     color: var(--color-primary);
     padding-right: 0.5rem;
     font-size: 1.3rem;
@@ -395,7 +401,6 @@ h2 {
     padding-bottom: 1.5rem;
 }
 
-
 .event .card {
     height: 100%;
 }
@@ -426,7 +431,6 @@ form label {
 
 input,
 textarea {
-    /* padding: 0.1rem; */
     margin: 0.1rem;
 }
 
@@ -440,7 +444,7 @@ textarea {
 input[type=button],
 input[type=submit],
 input[type=reset] {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     color: var(--color-off-white);
     cursor: pointer;
     padding: 0.5rem 2rem;
@@ -448,24 +452,24 @@ input[type=reset] {
     border: 0;
     margin-top: 1rem;
     margin-left: auto;
-    color: #000;
+    float: right;
 }
 
 input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
-    background-color: var(--color-off-white);
-    color: #000;
-}
-
-#newsletter input[type=submit] {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-#newsletter input[type=submit]:hover {
     background-color: var(--color-secondary);
-    color: #000;
+    color: var(--color-black);
+}
+
+#findus-form input[type=submit] {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+#findus-form input[type=submit]:hover {
+    background-color: var(--color-off-white);
+    color: var(--color-black);
 }
 
 footer {
