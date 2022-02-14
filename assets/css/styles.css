@@ -188,15 +188,12 @@ nav li {
     gap: 1.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    /* padding-top: 2rem;
-    padding-bottom: 2rem; */
     padding: 2rem 1.5rem;
 }
 
 .card {
     background-color: var(--color-white);
     padding: 1rem;
-    /* margin: 1rem; */
 }
 
 .card img {
