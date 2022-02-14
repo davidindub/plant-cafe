@@ -72,7 +72,7 @@ body {
 header {
     background-color: var(--color-primary);
     color: var(--color-off-white);
-    padding-top: 0.8rem;
+    padding: 0.8rem 0;
 }
 
 main {
@@ -91,7 +91,6 @@ h3 {
     margin: 0.5rem 0;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -100,23 +99,26 @@ a {
     text-decoration-color: transparent;
 }
 
+main a:not(.card, #hero-button) {
+    color: var(--color-primary);
+}
+
 p {
     line-height: 1.8;
 }
 
-a:hover:not(.card, #logo-link, #hero-button),
-a:focus:not(.card, #logo-link, #hero-button),
+nav a:hover, 
+#footer-nav a:hover, 
+a.card:hover h3,
 nav a[class="active"],
-a.card:hover h3 {
+main a:hover:not(.card) {
     text-decoration: underline;
     text-decoration-thickness: 0.2em;
-    text-decoration-color: initial;
 }
 
-a:hover:not(.card, #logo-link, #hero-button),
-a:focus:not(.card, #logo-link, #hero-button),
-.footer-socials i:hover,
-.footer-socials i:focus {
+nav a:hover, 
+footer a:hover, 
+nav a[class="active"]:hover {
     color: var(--color-secondary);
 }
 
@@ -130,11 +132,6 @@ a:focus:not(.card, #logo-link, #hero-button),
     text-transform: uppercase;
 }
 
-nav {
-    display: inline-block;
-    padding-bottom: .5rem;
-}
-
 nav ul,
 footer ul {
     list-style: none;
@@ -145,7 +142,6 @@ nav li {
     padding: 0 0.9rem;
     font-size: 0.9rem;
 }
-
 
 /* Hero Image Styles */
 
@@ -258,7 +254,6 @@ nav li {
 
 #findus-facilities {
     grid-area: findus-facilities;
-    padding-bottom: 2rem;
 }
 
 .findus-ul {
