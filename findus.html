@@ -40,9 +40,8 @@
     <main class="container">
         <section id="findus-content">
             <h2 id="page-title">Find Us</h2>
-            <div id="findus-facilities">
+            <div id="findus-address">
                 <h3>Visit our Shop in Dublin 2</h3>
-
                 <ul class="findus-ul">
                     <li><i class="fas fa-clock"></i> Mon-Fri <time>08:00</time> - <time>17:00</time><br>
                     </li>
@@ -55,10 +54,8 @@
                     23 New Leaf Street<br>
                     Dublin 2
                 </address>
-                <br>
-                <p>
-                    or <a href="#findus-form">Get in Touch</a> below.
-                </p>
+                <a href="#findus-map"><small>See us on Google Maps.</small></a>
+
             </div>
 
             <!-- Image of the Cafe -->
@@ -72,7 +69,7 @@
             </div>
 
             <!-- Physical Address of the Cafe -->
-            <div id="findus-address">
+            <div id="findus-facilities">
 
                 <!-- List of Facilities -->
                 <ul class="findus-ul">
@@ -90,11 +87,20 @@
             <div id="findus-form">
                 <h3>Get in Touch</h3>
                 <form action="https://formdump.codeinstitute.net/" method="POST">
-                    <label for="form-name">Your name</label>
+                    <label for="form-name">
+                        Your name
+                    </label>
                     <input type="text" id="form-name" name="form-name" placeholder="Jo" required>
-                    <label for="form-email">Your email</label>
+
+                    <label for="form-email">
+                        Your email
+                    </label>
                     <input type="email" id="form-email" name="form-email" placeholder="jo@iloveplants.com" required>
-                    <label for="form-message">Your message</label>
+
+                    <label for="form-message">
+                        Your message
+                    </label>
+
                     <textarea id="form-message" name="form-message" placeholder="Type your message here"
                         required></textarea>
                     <input type="submit" value="Send">

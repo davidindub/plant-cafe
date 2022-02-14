@@ -107,6 +107,10 @@ p {
     line-height: 1.8;
 }
 
+time {
+    font-family: var(--font-secondary);
+}
+
 nav a:hover, 
 #footer-nav a:hover, 
 a.card:hover h3,
@@ -235,9 +239,9 @@ nav li {
     display: grid;
     grid-template-areas:
         "page-title page-title"
-        "findus-facilities findus-facilities"
-        "findus-img findus-img2"
         "findus-address findus-address"
+        "findus-img findus-img2"
+        "findus-facilities findus-facilities"
         "findus-map findus-map"
         "findus-form findus-form"
     ;
@@ -337,7 +341,8 @@ h3 {
         "menu-drinks-cold menu-drinks-cold"
         "menu-sweet menu-sweet"
         "menu-lunch menu-lunch"
-        "menu-drinks-cold-img menu-lunch-img";
+        "menu-drinks-cold-img menu-lunch-img"
+        "menu-subtext menu-subtext";
 }
 
 .menu-section {
@@ -379,6 +384,11 @@ h3 {
     grid-area: menu-lunch-img;
 }
 
+#menu-subtext {
+    padding: 2rem 0;
+    grid-area: menu-subtext;
+}
+
 /* Events Styles */
 
 .events-content {
@@ -409,7 +419,7 @@ h3 {
     align-items: center;
 }
 
-#newsletter {
+#newsletter, #menu-subtext {
     width: clamp(300px, 600px, 100%);
     margin: 0 auto;
 }
@@ -474,7 +484,6 @@ footer {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
     font-size: 0.8rem;
     gap: 2rem;
     padding: 2rem 0;
@@ -555,8 +564,8 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "page-title page-title"
-            "findus-facilities findus-img"
-            "findus-img2 findus-address"
+            "findus-address findus-img"
+            "findus-img2 findus-facilities"
             "findus-map findus-map"
             "findus-form findus-form";
     }
@@ -568,7 +577,8 @@ footer {
             "menu-drinks-hot menu-drinks-hot-img"
             "menu-drinks-cold-img menu-drinks-cold"
             "menu-sweet menu-sweet-img"
-            "menu-lunch-img menu-lunch";
+            "menu-lunch-img menu-lunch"
+            "menu-subtext menu-subtext";
     }
 
     .event {
