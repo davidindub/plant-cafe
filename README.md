@@ -26,8 +26,6 @@ The main target of the website are people looking for quick information such as 
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
 
 - __Navigation Bar__
@@ -38,7 +36,7 @@ In this section, you should go over the different parts of your project, and des
 
   - The page the user is currently on is marked with a subtle underline to aide navigation.
 
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. The links are gold and underlined when hovered over with the cursor.
 
 
 - __The landing page image__
@@ -53,7 +51,7 @@ In this section, you should go over the different parts of your project, and des
 
 <img width="987" alt="Screenshot of the project's landing page cards" src="https://user-images.githubusercontent.com/69420622/153711326-72fbec6d-d7bd-40fe-99ba-4f8ce4136a68.png">
 
-  - Three cards with related photographs describe the three pages of the website where the user might like to visit.
+  - Three cards with related photographs describe the three pages of the website where the user might like to visit to find out information.
   - Clicking anywhere on each of these cards takes the user to the associated page, making the links easy to tap on mobile. There is a subtle underline and color change on hover/focus.
 
 - __The Footer__ 
@@ -75,7 +73,7 @@ In this section, you should go over the different parts of your project, and des
 
 - __Events__
 
-  - This page lists upcoming events happening at the cafe, and provides a form for a newsletter for users to find out about future events.
+  - This page lists upcoming events happening at the cafe, an embedded video with houseplant tips, and provides a form for a newsletter for users to find out about future events.
 
 
 ### Features Left to Implement
@@ -96,9 +94,9 @@ If this section grows too long, you may want to split it off into a separate fil
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.davidindub.com%2Fplant-cafe%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.davidindub.com%2Fplant-cafe%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Unfixed Bugs
 
@@ -112,8 +110,8 @@ This section should describe the process you went through to deploy the project 
 
 The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - From the source section drop-down menu, select Main Branch
+  - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
 The live link can be found here - http://www.davidindub.com/plant-cafe/
 
@@ -133,18 +131,3 @@ The live link can be found here - http://www.davidindub.com/plant-cafe/
 ### Media
 
 - The photos used are from [Unsplash](https://unsplash.com/), credit to [Daniela Constantini](https://www.pexels.com/@daniela-constantini), [Fernando Hernandez](https://unsplash.com/@_ferh97), [Nikola Jovanovic](https://unsplash.com/@danteov_seen), [Nathan Dumlao](https://unsplash.com/@nate_dumlao), and [Ruben Ramirez](https://unsplash.com/@pinchebesu).
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
