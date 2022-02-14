@@ -101,7 +101,7 @@ p {
 a:hover:not(.card, #logo-link, #hero-button),
 a:focus:not(.card, #logo-link, #hero-button),
 nav a[class="active"],
-a.card:hover h2 {
+a.card:hover h3 {
     text-decoration: underline;
     text-decoration-thickness: 0.2em;
     text-decoration-color: initial;
@@ -201,7 +201,7 @@ nav li {
     margin: 0 auto;
 }
 
-.card h2 {
+.card h3 {
     font-size: 2rem;
     padding-top: 1rem;
 }
@@ -289,7 +289,7 @@ nav li {
     width: 100%;
 }
 
-#findus-form h2 {
+#findus-form h3 {
     color: var(--color-off-white);
     font-size: 2rem;
 }
@@ -322,7 +322,7 @@ nav li {
 }
 
 .menu-section h1,
-h2 {
+h3 {
     color: var(--color-primary);
 }
 

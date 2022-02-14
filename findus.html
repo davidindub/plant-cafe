@@ -39,24 +39,29 @@
     <!-- Main Content -->
     <main id=#main-content class="container">
         <section id="findus-content">
-            <h1 id="page-title">Find Us</h1>
+            <h2 id="page-title">Find Us</h2>
             <div id="findus-facilities">
-                <h2>Visit our Shop in Dublin 2</h2>
-                <br>
-                <!-- List of Facilities -->
-                <ul id="findus-ul">
+                <h3>Visit our Shop in Dublin 2</h3>
+
+                <ul class="findus-ul">
                     <li><i class="fas fa-clock"></i> Mon-Fri <time>08:00</time> - <time>17:00</time><br>
                     </li>
                     <li><i class="fas fa-clock"></i> Sat-Sun <time>10:00</time> - <time>17:00</time><br><br>
                     </li>
-                    <li></li>
-                    <li><i class="fas fa-coffee"></i> Specialty Coffee</li>
-                    <li><i class="fas fa-leaf"></i> Plant Based Treats</li>
-                    <li><i class="fas fa-wifi"></i> Fast Wi-Fi</li>
-                    <li><i class="fas fa-seedling"></i> Healthy Houseplants for Sale</li>
-                    <li><i class="fas fa-wheelchair"></i> Fully Accessible</li>
-                    <li><i class="fas fa-baby"></i> High Chairs available</li>
                 </ul>
+
+                <address>
+                    Plant Cafe<br>
+                    23 New Leaf Street<br>
+                    Dublin 2
+                    <br>
+                    <br>
+                    <a href="mailto:hello@plantcafe.ie">hello@plantcafe.ie</a>
+                </address>
+                <br>
+                <p>
+                    or <a href="#findus-form">Get in Touch</a> below.
+                </p>
             </div>
             <!-- Image of the Cafe -->
             <img src="assets/images/img-cafe-sq.jpg" id="findus-img" alt="A bright cafe with lots of houseplants.">
@@ -70,17 +75,22 @@
 
             <!-- Physical Address of the Cafe -->
             <div id="findus-address">
-                <address>
-                    Plant Cafe<br>
-                    23 New Leaf Street<br>
-                    Dublin 2<br>
-                    <a href="mailto:hello@plantcafe.ie">hello@plantcafe.ie</a>
-                </address>
+
+                <!-- List of Facilities -->
+                <ul class="findus-ul">
+                    <li><i class="fas fa-coffee"></i> Specialty Coffee</li>
+                    <li><i class="fas fa-leaf"></i> Plant Based Treats</li>
+                    <li><i class="fas fa-wifi"></i> Fast Wi-Fi</li>
+                    <li><i class="fas fa-seedling"></i> Healthy Houseplants for Sale</li>
+                    <li><i class="fas fa-wheelchair"></i> Fully Accessible</li>
+                    <li><i class="fas fa-baby"></i> High Chairs available</li>
+                </ul>
+
             </div>
 
             <!-- Contact Form -->
             <div id="findus-form">
-                <h2>Get in Touch</h2>
+                <h3>Get in Touch</h3>
                 <form action="https://formdump.codeinstitute.net/" method="POST">
                     <label for="form-name">Your name</label>
                     <input type="text" id="form-name" name="form-name" placeholder="Jo" required>
