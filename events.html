@@ -22,10 +22,18 @@
         <h1 id="logo"><a href="index.html" id="logo-link">Plant Cafe</a></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html" class="active">Menu</a></li>
-                <li><a href="findus.html">Find Us</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="findus.html">Find Us</a>
+                </li>
+                <li>
+                    <a href="#logo" class="active">Events</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -34,6 +42,8 @@
     <main class="container">
         <section class="events-content">
             <h1 id="page-title">Events</h1>
+
+            <!-- Event 1 -->
             <article class="event">
                 <div class="card">
                     <img src="assets/images/img-watering.jpg" alt="">
@@ -41,68 +51,83 @@
                     <time datetime="2022-03-23T17:00">5PM Wed 23 March 2022</time>
                 </div>
                 <div class="event-details card">
-                    <p>Houseplants are the best way to bring nature into your home, they’re visually stunning and create
+                    <p>
+                        Houseplants are the best way to bring nature into your home, they’re visually stunning and
+                        create
                         a calm space. Best of all, when selected correctly for each room they can cleanse your air and
-                        increase oxygen.<br>
+                        increase oxygen.
+                        <br>
                         Join us to learn about the best plants to get started with, where to keep them, and the right
                         watering and feeding regimes to make your new plants thrive. We’ll have easy-to-care-for plants
-                        available for purchase on the evening.</p>
+                        available for purchase on the evening.
+                    </p>
                 </div>
             </article>
 
-                <article class="event">
-                    <div class="card">
-                        <img src="assets/images/img-seedling.jpg" alt="">
-                        <h2>Propagating Houseplants</h2>
-                        <time datetime="2022-04-06T17:00">5PM Wed 6 April 2022</time>
-                    </div>
-                    <div class="event-details card">
-                        <p>Growing new plants from cuttings is rewarding, they make great gifts and you can have a never
-                            ending supply to give to your family and friends! We’ll guide you through the best methods
-                            of cutting, dividing, potting and nurturing your new plant babies. All it takes is scissors,
-                            some water and time. You can bring along your favourite plant and we’ll show you how to get
-                            started.</p>
-                    </div>
-                </article>
-
-                    <article class="event">
-                        <div class="card">
-                            <div class="iframe-container">
-                                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/uX-dRX_1gBw"
-                                    title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <h2>How to Repot Houseplants</h2>
-                            <p>Online Class</p>
-                        </div>
-                        <div class="event-details card">
-                            <p>Houseplants need to be frequently repotted as they grow, so we are pleased to present
-                                this on demand video to help you grow your plant collection.
-                                <br><br>
-                                Why not <a href="#newsletter">sign up for our newsletter</a> for more videos from our
-                                plant experts?
-                            </p>
-                        </div>
-                    </article>
-                </section>
-
-                    <article id="newsletter" class="card">
-                    <h2>Events Newsletter</h2>
-                    <p>Sign up to our Events newsletter to hear about upcoming events first, as well as seasonal
-                        discounts and videos on plant care.
+            <!-- Event 2 -->
+            <article class="event">
+                <div class="card">
+                    <img src="assets/images/img-seedling.jpg" alt="">
+                    <h2>Propagating Houseplants</h2>
+                    <time datetime="2022-04-06T17:00">5PM Wed 6 April 2022</time>
+                </div>
+                <div class="event-details card">
+                    <p>
+                        Growing new plants from cuttings is rewarding, they make great gifts and you can have a never
+                        ending supply to give to your family and friends! We’ll guide you through the best methods
+                        of cutting, dividing, potting and nurturing your new plant babies. All it takes is scissors,
+                        some water and time. You can bring along your favourite plant and we’ll show you how to get
+                        started.
                     </p>
-                    <form action="https://formdump.codeinstitute.net/" method="POST">
-                        <label for="form-email">Your email</label>
-                        <input type="email" id="form-email" name="form-email" placeholder="jo@iloveplants.com" required>
-                        <br>
-                        <small>We respect your privacy and will never share your e-mail address.
-                            <br>You may unsubscribe at any stage by clicking the link at the bottom of the
-                            newsletter.</small>
-                        <br>
-                        <input type="submit" value="Sign me up!">
-                    </form>
-                </article>
+                </div>
+            </article>
+
+            <!-- Event 3 -->
+            <article class="event">
+                <div class="card">
+                    <div class="iframe-container">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/uX-dRX_1gBw"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h2>How to Repot Houseplants</h2>
+                    <p>Online Class</p>
+                </div>
+                <div class="event-details card">
+                    <p>
+                        Houseplants need to be frequently repotted as they grow, so we are pleased to present
+                        this on demand video to help you grow your plant collection.
+                        <br><br>
+                        Why not <a href="#newsletter">sign up for our newsletter</a> for more videos from our
+                        plant experts?
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <article id="newsletter" class="card">
+            <h2>Events Newsletter</h2>
+            <p>
+                Sign up to our Events newsletter to hear about upcoming events first, as well as seasonal
+                discounts and videos on plant care.
+            </p>
+            <form action="https://formdump.codeinstitute.net/" method="POST">
+                <label for="form-email">Your email</label>
+                <input type="email" id="form-email" name="form-email" placeholder="jo@iloveplants.com" required>
+                <br>
+                <small>
+                    We respect your privacy and will never share your e-mail address.
+                    <br>
+                    You may unsubscribe at any stage by clicking the link at the bottom of the
+                    newsletter.
+                </small>
+                <br>
+                <input type="submit" value="Sign me up!">
+            </form>
+        </article>
     </main>
 
     <!-- Footer -->
@@ -114,26 +139,46 @@
         </div>
         <div class="footer-section">
             <ul id="footer-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="findus.html">Find Us</a></li>
-                <li><a href="events.html" class="active">Events</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="findus.html">Find Us</a>
+                </li>
+                <li>
+                    <a href="#logo">Events</a>
+                </li>
             </ul>
         </div>
         <div class="footer-section">
             <ul class="footer-socials">
-                <li><a href="https://www.facebook.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in a new tab)"><i
-                            class="fab fa-2x fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter page (opens in a new tab)"><i
-                            class="fab fa-2x fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in a new tab)"><i
-                            class="fab fa-2x fa-instagram"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank" rel="noopener"
-                        aria-label="Visit our YouTube channel (opens in a new tab)"><i
-                            class="fab fa-2x fa-youtube"></i></a></li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)">
+                        <i class="fab fa-2x fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)">
+                        <i class="fab fa-2x fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)">
+                        <i class="fab fa-2x fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our YouTube channel (opens in a new tab)">
+                        <i class="fab fa-2x fa-youtube"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
