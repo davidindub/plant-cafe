@@ -1,5 +1,5 @@
 /* Imports Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Biryani&family=Rasa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rasa:wght@500&display=swap');
 
 /* Variables for Colors and Fonts */
 :root {
@@ -11,7 +11,7 @@
     --color-off-white: rgb(237, 237, 237);
 
     --font-headings: 'Rasa', serif;
-    --font-secondary: 'Biryani', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
 }
 
 /* Resets some of the user stylesheet default rules */
@@ -92,7 +92,6 @@ h3 {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
     transition: all 0.2s ease-in-out;
     text-decoration: underline;
@@ -101,6 +100,7 @@ a {
 
 main a:not(.card, #hero-button) {
     color: var(--color-primary);
+    text-decoration-color: inherit;
 }
 
 p {
@@ -195,7 +195,7 @@ nav li {
     gap: 1.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .card {
@@ -219,19 +219,10 @@ nav li {
     margin: 0 auto;
 }
 
-#main-welcome h2 {
+#main-welcome h3 {
     padding: 1rem 0;
 }
 
-#main-welcome a {
-    color: var(--color-primary);
-    text-decoration: underline;
-}
-
-#main-welcome a:hover {
-    color: var(--color-primary);
-    text-decoration-thickness: 0.2rem;
-}
 
 /* Find Us page Styles */
 
@@ -258,6 +249,7 @@ nav li {
 
 #findus-facilities {
     grid-area: findus-facilities;
+    padding: 4rem 0;
 }
 
 .findus-ul {
@@ -271,6 +263,7 @@ nav li {
 
 #findus-address {
     grid-area: findus-address;
+    padding-bottom: 4rem;
 }
 
 #findus-facilities,
@@ -459,7 +452,6 @@ input[type=reset] {
     border: 0;
     margin-top: 1rem;
     margin-left: auto;
-    float: right;
 }
 
 input[type=button]:hover,
