@@ -43,8 +43,9 @@ dd {
     margin: 0;
 }
 
-img,
-picture {
+/* Global Element Styles */
+
+img {
     max-width: 100%;
     display: block;
 }
@@ -55,13 +56,6 @@ textarea,
 select,
 time {
     font: inherit;
-}
-
-/* Element Styles */
-
-.container {
-    width: clamp(320px, 100%, 1200px);
-    margin: 0 auto;
 }
 
 body {
@@ -98,37 +92,16 @@ a {
     text-decoration-color: transparent;
 }
 
-main a:not(.card, #hero-button) {
-    color: var(--color-primary);
-    text-decoration-color: inherit;
-}
-
 p {
     line-height: 1.8;
 }
 
-time {
-    font-family: var(--font-secondary);
+.container {
+    width: clamp(320px, 100%, 1200px);
+    margin: 0 auto;
 }
 
-nav a:hover, 
-#footer-nav a:hover, 
-a.card:hover h3,
-nav a[class="active"],
-main a:hover:not(.card) {
-    text-decoration: underline;
-    text-decoration-thickness: 0.2em;
-}
-
-nav a:hover, 
-footer a:hover, 
-nav a[class="active"]:hover {
-    color: var(--color-secondary);
-}
-
-.card:focus {
-    outline: 3px solid var(--color-secondary);
-}
+/* Logo and Navigation Styles */
 
 #logo {
     font-weight: 500;
@@ -143,8 +116,34 @@ footer ul {
 
 nav li {
     display: inline;
-    padding: 0 0.9rem;
-    font-size: 0.9rem;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+}
+
+/* Link Styles */
+
+main a:not(.card, #hero-button) {
+    color: var(--color-primary);
+    text-decoration-color: inherit;
+}
+
+nav a:hover,
+#footer-nav a:hover,
+a.card:hover h3,
+nav a[class="active"],
+main a:hover:not(.card) {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+}
+
+nav a:hover,
+footer a:hover,
+nav a[class="active"]:hover {
+    color: var(--color-secondary);
+}
+
+.card:focus {
+    outline: 3px solid var(--color-secondary);
 }
 
 /* Hero Image Styles */
@@ -204,7 +203,6 @@ nav li {
 }
 
 .card h3 {
-    font-size: 2rem;
     padding-top: 1rem;
 }
 
@@ -212,6 +210,8 @@ nav li {
 .card time {
     margin-bottom: 1rem;
 }
+
+/* Homepage Welcome Text Styles */
 
 #main-welcome {
     grid-area: main-welcome;
@@ -223,8 +223,7 @@ nav li {
     padding: 1rem 0;
 }
 
-
-/* Find Us page Styles */
+/* Find Us Page Styles */
 
 #findus-content {
     display: grid;
@@ -277,8 +276,6 @@ nav li {
 
 #findus-form {
     grid-area: findus-form;
-    padding: 2rem 0;
-    justify-content: center;
     background-color: var(--color-primary);
     color: var(--color-off-white);
     width: 100%;
@@ -286,11 +283,6 @@ nav li {
 
 #findus-form h3 {
     color: var(--color-off-white);
-}
-
-#findus-form form {
-    margin: 0 auto;
-    max-width: 600px;
 }
 
 .findus-ul li {
@@ -304,7 +296,7 @@ nav li {
     padding-right: 1rem;
 }
 
-/* Menu Page Styles */
+/* Food & Drinks Menu Page Styles */
 
 .menu-section dt {
     font-weight: bold;
@@ -383,7 +375,7 @@ h3 {
     grid-area: menu-subtext;
 }
 
-/* Events Styles */
+/* Events Page Styles */
 
 .events-content {
     background-color: var(--color-primary);
@@ -413,7 +405,9 @@ h3 {
     align-items: center;
 }
 
-#newsletter, #menu-subtext {
+#newsletter,
+#menu-subtext,
+#findus-form form {
     width: clamp(300px, 600px, 100%);
     margin: 0 auto;
 }
@@ -471,13 +465,15 @@ input[type=reset]:hover {
     color: var(--color-black);
 }
 
+/* Footer Styles */
+
 footer {
     background-color: var(--color-primary);
     color: var(--color-off-white);
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     gap: 2rem;
     padding: 2rem 0;
     align-items: center;
@@ -498,24 +494,6 @@ footer li {
     color: inherit;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "logo"
-        "nav"
-        "main"
-        "footer";
-}
-
-#logo {
-    grid-area: logo;
-}
-
-nav {
-    grid-area: nav;
-}
-
 #page-title {
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -523,13 +501,7 @@ nav {
     grid-area: page-title;
 }
 
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
+/* Iframe Container Styles for YouTube and Google Map Embed */
 
 .iframe-container {
     position: relative;
@@ -544,14 +516,19 @@ footer {
     border: none;
 }
 
+/* Form Submission Page Styles */
+
 #thankyou-content {
     height: 50vh;
     justify-content: space-around;
 }
 
+/* Media Queries for Medium Size Screens / Tablet and Up */
+
 @media screen and (min-width: 768px) {
-    nav ul li {
-        font-size: 1.1rem;
+    nav li {
+        font-size: 1.2rem;
+        padding: 0 1rem;
     }
 
     .home-cards {
@@ -597,17 +574,22 @@ footer {
     }
 }
 
-@media screen and (min-width: 1200px) {
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+/* Media Query for Large Screens */
 
+@media screen and (min-width: 1200px) {
+    nav li {
+        padding: 0 1.1rem;
+    }
     .hero-inner h2 {
         font-size: 3.5rem;
     }
 
     #logo {
         font-size: 5rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #footer-nav {
