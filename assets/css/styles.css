@@ -223,50 +223,50 @@ nav a[class="active"]:hover {
     padding: 1rem 0;
 }
 
-/* Find Us Page Styles */
+/* Visit Us Page Styles */
 
-#findus-content {
+#visitus-content {
     display: grid;
     grid-template-areas:
         "page-title page-title"
-        "findus-address findus-address"
-        "findus-img findus-img2"
-        "findus-facilities findus-facilities"
-        "findus-map findus-map"
-        "findus-form findus-form"
+        "visitus-address visitus-address"
+        "visitus-img visitus-img2"
+        "visitus-facilities visitus-facilities"
+        "visitus-map visitus-map"
+        "visitus-form visitus-form"
     ;
     justify-items: center;
 }
 
-#findus-img {
-    grid-area: findus-img;
+#visitus-img {
+    grid-area: visitus-img;
 }
 
-#findus-img2 {
-    grid-area: findus-img2;
+#visitus-img2 {
+    grid-area: visitus-img2;
 }
 
-#findus-facilities {
-    grid-area: findus-facilities;
+#visitus-facilities {
+    grid-area: visitus-facilities;
     padding: 4rem 0;
 }
 
-.findus-ul {
+.visitus-ul {
     text-align: left;
     list-style: none;
 }
 
-#findus-map {
-    grid-area: findus-map;
+#visitus-map {
+    grid-area: visitus-map;
 }
 
-#findus-address {
-    grid-area: findus-address;
+#visitus-address {
+    grid-area: visitus-address;
     padding-bottom: 4rem;
 }
 
-#findus-facilities,
-#findus-address,
+#visitus-facilities,
+#visitus-address,
 #thankyou-content {
     display: flex;
     flex-direction: column;
@@ -274,22 +274,22 @@ nav a[class="active"]:hover {
     align-items: center;
 }
 
-#findus-form {
-    grid-area: findus-form;
+#visitus-form {
+    grid-area: visitus-form;
     background-color: var(--color-primary);
     color: var(--color-off-white);
     width: 100%;
 }
 
-#findus-form h3 {
+#visitus-form h3 {
     color: var(--color-off-white);
 }
 
-.findus-ul li {
+.visitus-ul li {
     text-align: left;
 }
 
-.findus-ul li i {
+.visitus-ul li i {
     color: var(--color-primary);
     padding-right: 0.5rem;
     font-size: 1.3rem;
@@ -407,7 +407,7 @@ h3 {
 
 #newsletter,
 #menu-subtext,
-#findus-form form {
+#visitus-form form {
     width: clamp(300px, 600px, 100%);
     margin: 0 auto;
 }
@@ -455,12 +455,12 @@ input[type=reset]:hover {
     color: var(--color-black);
 }
 
-#findus-form input[type=submit] {
+#visitus-form input[type=submit] {
     background-color: var(--color-secondary);
     color: var(--color-black);
 }
 
-#findus-form input[type=submit]:hover {
+#visitus-form input[type=submit]:hover {
     background-color: var(--color-off-white);
     color: var(--color-black);
 }
@@ -535,14 +535,14 @@ footer li {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #findus-content {
+    #visitus-content {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "page-title page-title"
-            "findus-address findus-img"
-            "findus-img2 findus-facilities"
-            "findus-map findus-map"
-            "findus-form findus-form";
+            "visitus-address visitus-img"
+            "visitus-img2 visitus-facilities"
+            "visitus-map visitus-map"
+            "visitus-form visitus-form";
     }
 
     .menu-content {
