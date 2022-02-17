@@ -147,6 +147,22 @@ I typed the title of the project 'Plant Cafe' into [Google Fonts](https://fonts.
 
 ***
 
+- __Favicon__
+
+![The favicon for the project](/assets/images/favicon/apple-touch-icon.png)
+
+  - A favicon and icon for iOS/Android homescreen bookmarks is included with the project's logo.
+
+-- __Meta Data for Social Media__
+
+![Screenshot of how the website displays when searched for on Google or shared on Facebook and Twitter](/documentation/images/testing/social-share-test.jpeg)
+
+  - Metadata was included in the `<head>` of each page to include a thumbnail of the site when shared on social media, and improve SEO.
+  - Semantic `<time>` tags were used for times & dates to improve SEO.
+
+
+***
+
 ### Features Left to Implement
 
 - The contact us form and newsletter signup currently don't submit to a server, but to a static page thanking the user for their submission.
