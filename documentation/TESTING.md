@@ -17,6 +17,12 @@ I tested the website on four different operating systems on four different types
 
 🔸 All iOS browsers use WebKit for rendering so perform same as Safari)
 
+#### Testing Favicon on all Browsers
+
+![](/documentation/images/testing/favicon/screenshot-favicon-all-browsers.png)
+![](/documentation/images/testing/favicon/screenshot-iphone-favicon.png)![](/documentation/images/testing/favicon/screenshot-android-favicon.png)
+![](/documentation/images/testing/favicon/screenshot-safari-mac-favicon.png)
+
 ### Accessibility
 
 - No errors were detected using the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/report#/https://www.davidindub.com/plant-cafe/).
